@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -16,15 +16,23 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+
 </head>
 <body>
+<header>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-grey shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{--{{ config('app.name', 'Laravel') }}--}}
+                    <div id="header-flex">
+                        <img id="logo-header" src="{{ asset('logos/Logo6_groot.png') }}" alt="Barroc Intens grote logo">
+                        <h1>Barroc Intens<span class="dot yellow yellow-dot">.</span></h1>
+                    </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -36,18 +44,14 @@
 
                     </ul>
 
+                    <a class="header-link" href="#quotation-section">Offerte aanvragen</a>
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" id="header-link"  href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -71,10 +75,39 @@
                 </div>
             </div>
         </nav>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
     </div>
+</header>
+
+        <section>
+            @yield('content')
+        </section>
+
+    <footer>
+        <div class="flex">
+            <div>
+                <div>
+                    <img src="{{ asset('../logos/Logo6_klein.png') }}" alt="">
+                </div>
+                <div>
+                    <ul>
+                        <li><a href=""></a>About us</li>
+                        <li><a href=""></a>Privacy Policy</li>
+                        <li><a href=""></a>Facebook</li>
+                        <li><a href=""></a>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="flex">
+                    <img src="" alt="">
+                    <a href=""></a>
+                </div>
+                <div class="flex">
+                    <img src="{{ asset('../icons/mail.png') }}" alt="">
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
