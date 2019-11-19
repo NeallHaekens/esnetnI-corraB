@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
-class Customer extends Controller
+class UsersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -23,7 +24,7 @@ class Customer extends Controller
      */
     public function create()
     {
-        //
+        return view('users/create');
     }
 
     /**
@@ -34,13 +35,13 @@ class Customer extends Controller
      */
     public function store(Request $request)
     {
-        Customer::insert([
+        User::insert([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => $request->password,
+            'password' => $request->password
         ]);
 
-        return redirect()->route('customer.index');
+        return redirect()->route('users.index');
     }
 
     /**
