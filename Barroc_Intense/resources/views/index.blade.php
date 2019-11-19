@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
         <form action="" method="post" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
@@ -24,6 +27,7 @@
                 <input type="submit" value="Vraag offerte aan">
             </div>
         </form>
+    @endsection
 
 
 
