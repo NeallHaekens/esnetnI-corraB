@@ -23,6 +23,7 @@
 
 </head>
 <body>
+@include('cookieConsent::index')
 <header>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-grey shadow-sm">
@@ -85,7 +86,6 @@
             </div>
 
         </nav>
-        @include('cookieConsent::index')
     </div>
 </header>
 

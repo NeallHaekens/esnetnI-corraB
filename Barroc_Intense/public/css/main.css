@@ -153,6 +153,7 @@
     padding: 20px 10px;
     position: absolute;
     top: 0px;
+    z-index: 9999;
 
 
     -webkit-animation: ease-in-from-top 2s;
