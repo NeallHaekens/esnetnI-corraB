@@ -83,7 +83,9 @@
                     </ul>
                 </div>
             </div>
+
         </nav>
+        @include('cookieConsent::index')
     </div>
 </header>
 

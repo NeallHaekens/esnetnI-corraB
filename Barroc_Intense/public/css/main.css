@@ -143,6 +143,32 @@
     font-weight: 100;
     font-style: normal;
 }
+/*Cookies*/
+.js-cookie-consent{
+    width: 100%;
+    text-align: center;
+    background: #000000;
+    box-shadow: 0 -5px 5px -5px #515151;
+    color: #ffd700;
+    padding: 20px 10px;
+    position: absolute;
+    top: 0px;
+
+
+    -webkit-animation: ease-in-from-top 2s;
+}
+.cookie-consent__message{
+    color: #ffd700;
+}
+.cookie-consent__agree{
+    border: solid #ffd700;
+    background: #ffd700;
+    border-radius: 4px;
+}
+.cookie-consent__agree:hover{
+    color: white;
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
 
 /*Algemene aanpassingen*/
 
@@ -369,19 +395,32 @@ footer{
 @-webkit-keyframes ease-in-right {
     0% {
         opacity: 0.1;
-        margin-right: -1000px;
+        transform: translate3d( 250px, 0px, 0px);
     }
     100%{
         opacity: 1;
+        transform: translate3d(0px, 0px, 0px);
+
     }
 }
 
 @-webkit-keyframes ease-in-left {
     0% {
         opacity: 0.1;
-        margin-left: -1000px;
+        transform: translate3d(-250px, 0px, 0px);
     }
     100%{
         opacity: 1;
+        transform: translate3d(0px, 0px, 0px);
+
     }
 }
+@-webkit-keyframes ease-in-from-top {
+    0% {
+        transform: translate3d(0px, -100px, 0px);
+    }
+    100%{
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
