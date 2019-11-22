@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Barroc-Intense</title>
+    <title>@yield('title')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -16,16 +16,34 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+
 </head>
 <body>
+@include('cookieConsent::index')
+<header>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-grey shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Barroc-Intense
+                    {{--{{ config('app.name', 'Laravel') }}--}}
+                    <div id="header-flex">
+                        <img id="logo-header" src="{{ asset('logos/Logo6_groot.png') }}" alt="Barroc Intens grote logo">
+                        <h1>Barroc Intens<span class="dot yellow yellow-dot">.</span></h1>
+                    </div>
                 </a>
+                <div>
+                    <div class="flex">
+                        <a class="links-header" href=""><img class="icons-small" src="{{ asset('../icons/old_phone.png') }}" alt=""> 06-XXX-XXX-XX</a>
+                    </div>
+                    <div class="flex">
+                        <a class="links-header" href="mailto:barrocintens@info.nl"><img class="icons-small" src="{{ asset('../icons/mail.png') }}" alt=""> barrocintens@info.nl</a>
+                    </div>
+                </div>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -36,18 +54,14 @@
 
                     </ul>
 
+                    <a class="header-link" href="#quotation-section">Offerte aanvragen</a>
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" id="header-link"  href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -70,11 +84,53 @@
                     </ul>
                 </div>
             </div>
-        </nav>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
+        </nav>
     </div>
+</header>
+
+        <section>
+            @yield('content')
+        </section>
+
+    <footer>
+        <div class="flex container">
+                <div class="flex">
+                   <img class="logo-small"  src="{{ asset('../logos/Logo6_groot.png') }}" alt="">
+                    <div>
+                        <h2 id="bizar-goede-koffie-footer">b<span class="yellow bold">//</span> zar goede koffie<span class="yellow">.</span></h2>
+                    </div>
+                </div>
+                <div style="margin-left: 20px;">
+                    <div>
+                        <h2>About us<span class="yellow">.</span></h2>
+                        <p style="color: #000000;">Onze passie door geven aan jullie<span class="yellow">.</span></p>
+                    </div>
+                    <div class="flex">
+                        <a class="links" href=""><img class="icons" src="{{ asset('../icons/old_phone.png') }}" alt=""> 06-XXXXXXXX</a>
+                    </div>
+                    <div class="flex">
+                        <a class="links" href="mailto:barrocintens@info.nl"><img class="icons" src="{{ asset('../icons/mail.png') }}" alt=""> barrocintens@info.nl</a>
+                    </div>
+                </div>
+            <div>
+                <div>
+                    <ul>
+                        <h4>Helpfull Links<span class="yellow">.</span></h4>
+                        <li class="lists"><a href="" class="links">Services</a></li>
+                        <li class="lists"><a href="" class="links">Support</a></li>
+                        <li class="lists"><a href="" class="links">Terms & Conditions</a></li>
+                        <li class="lists"><a href="" class="links">Privacy Policy</a></li>
+                        <li class="lists"><a href="" class="links">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div id="page-up">
+                    <a href="#app"><img class="icons" src="{{ asset('../icons/page_up.png') }}" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
