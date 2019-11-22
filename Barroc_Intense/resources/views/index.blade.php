@@ -57,12 +57,12 @@
                 <div class="ease-in-left">
                     <h2>Products<span class="yellow">.</span></h2>
                     <div class=" img-right">
-                        <img id="products-img" src="{{ asset('../images/bit-deluxe.png') }}" alt="">
+                        <img class="products-img" src="{{ asset('../images/bit-deluxe.png') }}" alt="">
                     </div>
                 </div>
                 <div class="ease-in-right">
                     <div class="about-us img-border">
-                        <img id="products-img" src="{{ asset('../images/shopping.jpg') }}" alt="">
+                        <img class="products-img" src="{{ asset('../images/bit-light.png') }}" alt="">
                     </div>
 
                 </div>
@@ -73,32 +73,35 @@
     </section>
 
     <section id="quotation-section">
-        <div class="container-forms">
-            <form action="" method="post" enctype="multipart/form-data">
-                @csrf
-                <div class="form-group">
-                    <label for="name">Naam</label>
-                    <input class="form-control" type="text" name="name">
-                </div>
+        <div class="content">
+            <div class="container-forms">
+                    <img id="quotation-form-logo" src="{{ asset('../logos/Logo6_groot.png') }}" alt="">
+                <form action="" method="post" enctype="multipart/form-data">
+                    @csrf
+                    <div class="form-group">
+                        <label for="name">Naam</label>
+                        <input class="form-control" type="text" name="name">
+                    </div>
 
-                <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input class="form-control" type="email" name="email">
-                </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input class="form-control" type="email" name="email">
+                    </div>
 
-                <div class="form-group">
-                    <label for="topic">Onderwerp</label>
-                    <input class="form-control" type="text" name="topic">
-                </div>
+                    <div class="form-group">
+                        <label for="topic">Onderwerp</label>
+                        <input class="form-control" type="text" name="topic">
+                    </div>
 
-                <div class="form-group">
-                    <label for="description">Beschrijving</label>
-                    <input class="form-control" type="text" name="description">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+                    <div class="form-group">
+                        <label for="description">Beschrijving</label>
+                        <input class="form-control" type="text" name="description">
+                    </div>
+                    <button type="submit" class="btn submit-btn">Submit</button>
+                </form>
+            </div>
         </div>
-        </section>
+    </section>
 @endsection
 
 

@@ -34,6 +34,15 @@
                         <h1>Barroc Intens<span class="dot yellow yellow-dot">.</span></h1>
                     </div>
                 </a>
+                <div>
+                    <div class="flex">
+                        <a class="links-header" href=""><img class="icons-small" src="{{ asset('../icons/old_phone.png') }}" alt=""> 06-XXX-XXX-XX</a>
+                    </div>
+                    <div class="flex">
+                        <a class="links-header" href="mailto:barrocintens@info.nl"><img class="icons-small" src="{{ asset('../icons/mail.png') }}" alt=""> barrocintens@info.nl</a>
+                    </div>
+                </div>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -83,28 +92,40 @@
         </section>
 
     <footer>
-        <div class="flex">
+        <div class="flex container">
+                <div class="flex">
+                   <img class="logo-small"  src="{{ asset('../logos/Logo6_groot.png') }}" alt="">
+                    <div>
+                        <h2 id="bizar-goede-koffie-footer">b<span class="yellow bold">//</span> zar goede koffie<span class="yellow">.</span></h2>
+                    </div>
+                </div>
+                <div style="margin-left: 20px;">
+                    <div>
+                        <h2>About us<span class="yellow">.</span></h2>
+                        <p style="color: #000000;">Onze passie door geven aan jullie<span class="yellow">.</span></p>
+                    </div>
+                    <div class="flex">
+                        <a class="links" href=""><img class="icons" src="{{ asset('../icons/old_phone.png') }}" alt=""> 06-XXXXXXXX</a>
+                    </div>
+                    <div class="flex">
+                        <a class="links" href="mailto:barrocintens@info.nl"><img class="icons" src="{{ asset('../icons/mail.png') }}" alt=""> barrocintens@info.nl</a>
+                    </div>
+                </div>
             <div>
                 <div>
-                    <img src="{{ asset('../logos/Logo6_klein.png') }}" alt="">
-                </div>
-                <div>
                     <ul>
-                        <li><a href=""></a>About us</li>
-                        <li><a href=""></a>Privacy Policy</li>
-                        <li><a href=""></a>Facebook</li>
-                        <li><a href=""></a>Twitter</li>
+                        <h4>Helpfull Links<span class="yellow">.</span></h4>
+                        <li class="lists"><a href="" class="links">Services</a></li>
+                        <li class="lists"><a href="" class="links">Support</a></li>
+                        <li class="lists"><a href="" class="links">Terms & Conditions</a></li>
+                        <li class="lists"><a href="" class="links">Privacy Policy</a></li>
+                        <li class="lists"><a href="" class="links">Cookies</a></li>
                     </ul>
                 </div>
             </div>
             <div>
-                <div class="flex">
-                    <img src="" alt="">
-                    <a href=""></a>
-                </div>
-                <div class="flex">
-                    <img src="{{ asset('../icons/mail.png') }}" alt="">
-                    <a href=""></a>
+                <div id="page-up">
+                    <a href="#app"><img class="icons" src="{{ asset('../icons/page_up.png') }}" alt=""></a>
                 </div>
             </div>
         </div>
