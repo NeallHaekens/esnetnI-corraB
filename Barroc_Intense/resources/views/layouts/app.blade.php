@@ -117,11 +117,11 @@
                 <div>
                     <ul>
                         <h4>Helpfull Links<span class="yellow">.</span></h4>
-                        <li class="lists"><a href="" class="links">Services</a></li>
-                        <li class="lists"><a href="" class="links">Support</a></li>
-                        <li class="lists"><a href="" class="links">Terms & Conditions</a></li>
-                        <li class="lists"><a href="" class="links">Privacy Policy</a></li>
-                        <li class="lists"><a href="" class="links">Cookies</a></li>
+                        <li class="lists"><a href="" class="links-header">Services</a></li>
+                        <li class="lists"><a href="" class="links-header">Support</a></li>
+                        <li class="lists"><a href="" class="links-header">Terms & Conditions</a></li>
+                        <li class="lists"><a href="" class="links-header">Privacy Policy</a></li>
+                        <li class="lists"><a href="" class="links-header">Cookies</a></li>
                     </ul>
                 </div>
             </div>
