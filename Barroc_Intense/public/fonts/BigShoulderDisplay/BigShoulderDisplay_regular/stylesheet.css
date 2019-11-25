@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('BigShouldersDisplay-Regular.eot');
+    src: url('BigShouldersDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BigShouldersDisplay-Regular.woff2') format('woff2'),
+        url('BigShouldersDisplay-Regular.woff') format('woff'),
+        url('BigShouldersDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
