@@ -215,7 +215,7 @@ h2, h3, h4, h5{
     text-decoration: none;
 }
 .links:hover{
-    color: white;
+    color: #ffc500;
     text-decoration: none;
 }
 .icons{
@@ -375,9 +375,9 @@ footer{
     padding: 5px 6px;
 }
 #page-up:hover{
-    background-color: #515151;
-    border: solid #ffd700 1.5px;
-    background: transparent;
+    background-color: #000000;
+    border: solid #000000 1.5px;
+    /*background: transparent;*/
 }
 
 

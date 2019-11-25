@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCompanydetailsTable extends Migration
+class CreateLeaseTypeTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class CreateCompanydetailsTable extends Migration
      */
     public function up()
     {
-        Schema::create('companydetails', function (Blueprint $table) {
+        Schema::create('lease_type', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->boolean('period');
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ class CreateCompanydetailsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('companydetails');
+        Schema::dropIfExists('lease_type');
     }
 }

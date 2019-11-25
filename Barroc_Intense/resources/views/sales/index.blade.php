@@ -1,10 +1,23 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Gebruiker
- * Date: 18-11-2019
- * Time: 13:06
- */
-?>
+@extends('layouts/app')
 
-<h1>You are now in sales</h1>
+@section('content')
+    <section class="content">
+        <div class="container">
+            <div>
+                <h2>Sales<span class="yellow">.</span></h2>
+
+                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                <a class="nav-link " href="{{ route('register') }}">{{ __('Registeer hier een klant.') }}</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="content">
+            <div class="container">
+                    <a href="quotations/create">Offerte aanmaken</a>
+                </div>
+            </div>
+        </div>
+    </section>
+@endsection

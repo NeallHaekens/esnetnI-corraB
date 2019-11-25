@@ -26,3 +26,5 @@ Route::resource('maintenance', 'MaintenanceController');
 Route::resource('sales', 'SalesController');
 
 Route::resource('supplier', 'SupplierController');
+
+Route::resource('quotations', 'QuotationsController');

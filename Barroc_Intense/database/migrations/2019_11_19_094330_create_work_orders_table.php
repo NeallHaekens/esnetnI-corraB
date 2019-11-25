@@ -17,7 +17,7 @@ class CreateWorkOrdersTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('lease_id');
-
+            $table->unsignedBigInteger('mailfunction_id');
             $table->timestamps();
 
             $table->foreign('user_id')
@@ -27,6 +27,10 @@ class CreateWorkOrdersTable extends Migration
             $table->foreign('lease_id')
                 ->references('id')
                 ->on('leases');
+
+            $table->foreign('malfunction_id')
+                ->references('id')
+                ->on('malfunctions');
         });
     }
 
