@@ -76,7 +76,24 @@
         <div class="content">
             <div class="container-forms">
                     <img id="quotation-form-logo" src="{{ asset('../logos/Logo6_groot.png') }}" alt="">
-                <form action="" method="post" enctype="multipart/form-data">
+                @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <button type="button" class="close" data-dismiss="alert">x</button>
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
+                @if ($message = Session::get('succes'))
+                    <div class="alert alert-succes aler-block">
+                        <button type="button" class="close" data-dismiss="alert">x</button>
+                        <strong>{{ $message }}</strong>
+                    </div>
+                @endif
+                <form action="{{ url('sendemail/send') }}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
                         <label for="name">Naam</label>
@@ -95,9 +112,9 @@
 
                     <div class="form-group">
                         <label for="description">Beschrijving</label>
-                        <input class="form-control" type="text" name="description">
+                        <textarea name="description" class="form-control"></textarea>
                     </div>
-                    <button type="submit" class="btn submit-btn">Submit</button>
+                    <button type="submit" name="send" class="btn submit-btn">Submit</button>
                 </form>
             </div>
         </div>
