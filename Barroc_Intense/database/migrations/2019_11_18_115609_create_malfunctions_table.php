@@ -26,7 +26,7 @@ class CreateMalfunctionsTable extends Migration
 
             $table->foreign('malfunction_type_id')
                 ->references('id')
-                ->on('malfunction_type');
+                ->on('malfunction_types');
         });
     }
 
