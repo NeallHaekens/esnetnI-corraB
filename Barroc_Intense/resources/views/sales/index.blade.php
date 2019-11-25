@@ -18,6 +18,10 @@
                     <a href="quotations/create">Offerte aanmaken</a>
                 </div>
             </div>
+
+            <div class="container">
+                <a href="offer/create">Prijs opgave aanmaken</a>
+            </div>
         </div>
     </section>
 @endsection
