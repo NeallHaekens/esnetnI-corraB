@@ -18,7 +18,7 @@ class CreateQuotationsTable extends Migration
             $table->unsignedBigInteger('sales_id');
             $table->unsignedBigInteger('customer_id');
             $table->unsignedBigInteger('lease_id');
-            $table->unsignedBigInteger('supplies_id');
+            $table->unsignedBigInteger('supply_id');
             $table->string('price');
             $table->timestamps();
 
@@ -34,7 +34,7 @@ class CreateQuotationsTable extends Migration
                 ->references('id')
                 ->on('leases');
 
-            $table->foreign('supplies_id')
+            $table->foreign('supply_id')
                 ->references('id')
                 ->on('supplies');
         });
