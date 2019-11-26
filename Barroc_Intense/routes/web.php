@@ -34,3 +34,5 @@ Route::post('/sendemail/send', 'SendEmailController@send');
 Route::resource('quotations', 'QuotationsController');
 
 Route::resource('offer', 'OfferController');
+
+Route::resource('product', 'ProductController');
