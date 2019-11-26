@@ -15,6 +15,8 @@ class CreateMalfunctionTypesTable extends Migration
     {
         Schema::create('malfunction_types', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('title');
+
             $table->timestamps();
         });
     }

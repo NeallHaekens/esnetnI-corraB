@@ -17,7 +17,7 @@ class CreateWorkOrdersTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('lease_id');
-            $table->unsignedBigInteger('mailfunction_id');
+            $table->unsignedBigInteger('malfunction_id');
             $table->timestamps();
 
             $table->foreign('user_id')
