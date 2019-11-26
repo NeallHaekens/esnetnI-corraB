@@ -41,7 +41,7 @@ class UsersController extends Controller
             'password' => $request->password
         ]);
 
-        return redirect()->route('users.index');
+        return redirect()->route('sales.index');
     }
 
     /**
