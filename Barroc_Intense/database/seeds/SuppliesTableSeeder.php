@@ -11,6 +11,6 @@ class SuppliesTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
     }
 }
