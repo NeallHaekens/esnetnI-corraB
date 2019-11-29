@@ -257,6 +257,15 @@ h2, h3, h4, h5{
 #header-link:hover {
     color: #ffd700;
 }
+.header-nav {
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+.header-nav:hover{
+    color: #ffd700;
+    text-decoration: none;
+}
 
 #logo-header{
     width: 90px;

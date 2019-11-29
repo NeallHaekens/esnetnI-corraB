@@ -55,6 +55,7 @@
                     </ul>
 
                     <a class="header-link" href="#quotation-section">Offerte aanvragen</a>
+                    <a class="header-nav" href="{{route('product.index')}}">Producten</a>
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->

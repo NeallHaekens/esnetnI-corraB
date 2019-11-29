@@ -1,29 +1,28 @@
+@extends('layouts/app')
 
-@extends('app')
-
-@section('users-create')
+@section('content')
 
     <h1>User Create</h1>
 
-    <form action="{{ route('users.store') }}" method="post">
+    <form action="{{ route('sales.store') }}" method="post">
 
         @method('PUT')
 
         @csrf
 
-        <div class="input-group">
+        <div class="col-md-6">
             <label>Name</label>
-            <input type="text" name="name" value="{{ $user->name }}">
+            <input type="text" name="name" >
         </div>
 
         <div class="input-group">
             <label>Email</label>
-            <input type="email" name="email" value="{{ $user->email }}">
+            <input type="email" name="email" >
         </div>
 
         <div class="input-group">
             <label>Password</label>
-            <input type="password" name="password_1" value="{{ $user->password }}">
+            <input type="password" name="password_1">
         </div>
 
         <div class="input-group">
