@@ -15,10 +15,10 @@ class CreateSuppliesTable extends Migration
     {
         Schema::create('supplies', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->char('name');
-            $table->bigInteger('token');
-            $table->decimal('lease', 8, 2);
-            $table->decimal('install', 8 , 2);
+            $table->string('token');
+            $table->string('title');
+            $table->decimal('price', '6', '2');
+            $table->bigInteger('quantity');
             $table->timestamps();
         });
     }

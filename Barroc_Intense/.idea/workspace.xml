@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53c5dccf-a9b3-4f36-ba72-f4dc1e4f6e20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_18_115609_create_malfunctions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_18_115609_create_malfunctions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_090549_create_supplies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_090549_create_supplies_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_19_090514_create_quotations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_19_090514_create_quotations_table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2019_12_19_090514_create_quotations_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+            <state relative-caret-position="323">
+              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -38,6 +40,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
               <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_19_090549_create_supplies_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -56,13 +67,13 @@
         <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_19_094330_create_work_orders_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+              <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_18_115639_create_malfunction_types_table.php">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_17_115639_create_malfunction_types_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
@@ -70,11 +81,36 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_18_115609_create_malfunctions_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+            <state relative-caret-position="408">
+              <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/css/bootstrap.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1547">
+              <caret line="5" column="86647" selection-start-line="5" selection-start-column="86647" selection-end-line="5" selection-end-column="86647" />
+              <folding>
+                <element signature="e#25768#26002#2" expanded="true" />
+                <element signature="e#26806#26959#1" expanded="true" />
+                <element signature="e#26999#27233#1" expanded="true" />
+                <element signature="e#30239#30515#2" expanded="true" />
+                <element signature="e#31347#31500#1" expanded="true" />
+                <element signature="e#31540#31816#1" expanded="true" />
+                <element signature="e#61072#61259#2" expanded="true" />
+                <element signature="e#61488#61624#2" expanded="true" />
+                <element signature="e#62027#62160#2" expanded="true" />
+                <element signature="e#63642#63795#1" expanded="true" />
+                <element signature="e#75788#76018#2" expanded="true" />
+                <element signature="e#76885#77121#2" expanded="true" />
+                <element signature="e#106714#106891#2" expanded="true" />
+                <element signature="e#106937#107114#2" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,12 +161,13 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_11_19_091511_create_purchases_roles_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_19_092347_create_lease_type_table.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_11_19_094330_create_work_orders_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_19_095126_create_invoices_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_18_115639_create_malfunction_types_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_12_19_090514_create_quotations_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_25_124616_create_offer_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_18_115609_create_malfunctions_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_11_19_094330_create_work_orders_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_12_19_090514_create_quotations_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_11_19_090549_create_supplies_table.php" />
       </list>
     </option>
   </component>
@@ -225,10 +262,11 @@
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-cookie-consent" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="1375" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="785" />
+    <option name="height" value="840" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -257,23 +295,6 @@
             <path>
               <item name="Barroc_Intense" type="b2602c69:ProjectViewProjectNode" />
               <item name="Barroc_Intense" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Barroc_Intense" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Barroc_Intense" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Barroc_Intense" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Barroc_Intense" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Barroc_Intense" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Barroc_Intense" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -281,13 +302,6 @@
               <item name="Barroc_Intense" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Barroc_Intense" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Barroc_Intense" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Barroc_Intense" type="b2602c69:ProjectViewProjectNode" />
@@ -303,7 +317,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../practice/practice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../practice/testbarroc" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -349,18 +363,19 @@
       <workItem from="1574668912367" duration="86000" />
       <workItem from="1574669025093" duration="4911000" />
       <workItem from="1574675180580" duration="3385000" />
-      <workItem from="1574682678724" duration="4276000" />
+      <workItem from="1574682678724" duration="7117000" />
+      <workItem from="1574759932452" duration="593000" />
+      <workItem from="1575029108046" duration="796000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33073000" />
+    <option name="totallyTimeSpent" value="37303000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2624161" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2785235" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -410,15 +425,11 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_transfonter.org-20191120-074558.zip/stylesheet.css" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_transfonter.org-20191120-074623.zip/stylesheet.css" />
     <entry file="file://$PROJECT_DIR$/resources/js/components/Example.js" />
     <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/custom.css" />
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/layout.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -601,6 +612,20 @@
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_19_093826_create_lease_rules_table.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_19_095126_create_invoices_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" selection-start-line="19" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_12_19_090514_create_quotations_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -610,21 +635,44 @@
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_19_094330_create_work_orders_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+          <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_18_115639_create_malfunction_types_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_17_115639_create_malfunction_types_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_19_095126_create_invoices_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_18_115609_create_malfunctions_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" selection-start-line="19" selection-end-line="20" />
+        <state relative-caret-position="408">
+          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1547">
+          <caret line="5" column="86647" selection-start-line="5" selection-start-column="86647" selection-end-line="5" selection-end-column="86647" />
+          <folding>
+            <element signature="e#25768#26002#2" expanded="true" />
+            <element signature="e#26806#26959#1" expanded="true" />
+            <element signature="e#26999#27233#1" expanded="true" />
+            <element signature="e#30239#30515#2" expanded="true" />
+            <element signature="e#31347#31500#1" expanded="true" />
+            <element signature="e#31540#31816#1" expanded="true" />
+            <element signature="e#61072#61259#2" expanded="true" />
+            <element signature="e#61488#61624#2" expanded="true" />
+            <element signature="e#62027#62160#2" expanded="true" />
+            <element signature="e#63642#63795#1" expanded="true" />
+            <element signature="e#75788#76018#2" expanded="true" />
+            <element signature="e#76885#77121#2" expanded="true" />
+            <element signature="e#106714#106891#2" expanded="true" />
+            <element signature="e#106937#107114#2" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -635,17 +683,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_12_19_090514_create_quotations_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_19_090549_create_supplies_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_18_115609_create_malfunctions_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+        <state relative-caret-position="323">
+          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
         </state>
       </provider>
     </entry>
