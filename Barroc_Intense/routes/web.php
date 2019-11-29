@@ -37,4 +37,4 @@ Route::resource('offer', 'OfferController');
 
 Route::resource('product', 'ProductController');
 
-Route::recourse('customer', 'MalfunctionController');
+Route::resource('customer', 'customerController');
