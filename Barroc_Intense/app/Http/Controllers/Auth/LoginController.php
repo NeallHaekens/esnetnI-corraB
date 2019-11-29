@@ -25,7 +25,24 @@ class LoginController extends Controller
      *
      * @var string
      */
+
     protected $redirectTo = '/home';
+    protected function redirectTo()
+    {
+        if (auth()->user()->role_id == '4'){
+            return '/finance';
+        }
+        if (auth()->user()->role_id == '3'){
+            return '/supplier';
+        }
+        if (auth()->user()->role_id == '2') {
+            return '/maintenance';
+        }
+        if (auth()->user()->role_id == '3'){
+            return '/sales';
+        }
+        return '/';
+    }
 
     /**
      * Create a new controller instance.

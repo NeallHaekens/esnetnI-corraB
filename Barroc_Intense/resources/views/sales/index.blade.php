@@ -6,8 +6,7 @@
             <div>
                 <h2>Sales<span class="yellow">.</span></h2>
 
-                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                <a class="nav-link " href="{{ route('register') }}">{{ __('Registeer hier een klant.') }}</a>
+                <a class="nav-link " href="{{ route('sales.create') }}">{{ __('Registeer hier een klant.') }}</a>
             </div>
         </div>
     </section>
@@ -17,6 +16,10 @@
             <div class="container">
                     <a href="quotations/create">Offerte aanmaken</a>
                 </div>
+            </div>
+
+            <div class="container">
+                <a href="offer/create">Prijs opgave aanmaken</a>
             </div>
         </div>
     </section>

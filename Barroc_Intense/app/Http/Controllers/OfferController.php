@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
 use Illuminate\Http\Request;
 
-class UsersController extends Controller
+class OfferController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -24,7 +23,7 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //return view('users/create');
+        return view('offer/create');
     }
 
     /**
@@ -35,13 +34,7 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        User::insert([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => $request->password
-        ]);
-
-        return redirect()->route('sales.index');
+        //
     }
 
     /**

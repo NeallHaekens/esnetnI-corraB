@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
+use App\product;
 use Illuminate\Http\Request;
 
-class UsersController extends Controller
+class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class UsersController extends Controller
      */
     public function index()
     {
-        //
+        return view('customer/products');
     }
 
     /**
@@ -24,7 +24,7 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //return view('users/create');
+        //
     }
 
     /**
@@ -35,22 +35,16 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        User::insert([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => $request->password
-        ]);
-
-        return redirect()->route('sales.index');
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(product $product)
     {
         //
     }
@@ -58,10 +52,10 @@ class UsersController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\product  $product
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(product $product)
     {
         //
     }
@@ -70,10 +64,10 @@ class UsersController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, product $product)
     {
         //
     }
@@ -81,10 +75,10 @@ class UsersController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\product  $product
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(product $product)
     {
         //
     }
