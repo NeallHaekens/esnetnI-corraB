@@ -13,7 +13,7 @@ class MalfunctionQuestion extends Controller
      */
     public function index()
     {
-        //
+        return value('customer/MalfunctionQuestion');
     }
 
     /**

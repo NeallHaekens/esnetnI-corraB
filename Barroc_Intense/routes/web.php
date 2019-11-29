@@ -36,3 +36,5 @@ Route::resource('quotations', 'QuotationsController');
 Route::resource('offer', 'OfferController');
 
 Route::resource('product', 'ProductController');
+
+Route::recourse('customer', 'MalfunctionController');
