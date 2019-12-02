@@ -13,7 +13,10 @@
         <div class="content">
             <div class="container">
 
-                <a href="customer/create">storing aanvragen</a>
+                <a href="{{ route('customer.create') }}"><button type="submit" name="send" class="btn submit-btn">Storings aanvraag</button></a>
+
+                <a href="">Persoons gegevens</a>
+
                 {{--<a href="customer/malfunction">Offerte aanmaken</a>--}}
 
                 {{--<a href="customer/malfunction"><button type="submit" name="send" class="btn submit-btn">Storings aanvraag</button></a>--}}

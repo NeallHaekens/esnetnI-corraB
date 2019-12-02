@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Malfunction;
 use Illuminate\Http\Request;
 
 
@@ -27,7 +28,8 @@ class customerController extends Controller
      */
     public function create()
     {
-        return view('customer/create');
+        $malfunction_types = \App\Malfunction_type::all();
+        return view('customer/create', ['malfunction_types'=>$malfunction_types]);
     }
 
     /**
@@ -38,7 +40,13 @@ class customerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //            Product::insert([
+        //                'name'           => $request->name,
+        //                'price'          => $request->price,
+        //                'categories_id'  => $request->categorie_id
+        //            ])
+
+
     }
 
     /**
