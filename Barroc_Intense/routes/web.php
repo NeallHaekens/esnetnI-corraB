@@ -38,6 +38,8 @@ Route::resource('offer', 'OfferController');
 Route::resource('product', 'ProductController');
 
 Route::resource('customer', 'customerController');
+
+
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 Route::get('/Admin', function () {
 

@@ -46,9 +46,7 @@ class customerController extends Controller
         //                'categories_id'  => $request->categorie_id
         //            ])
 
-        Malfunction::insert([
-            'client_id' => 
-        ])
+
     }
 
     /**
