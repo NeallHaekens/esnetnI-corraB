@@ -65,6 +65,6 @@ Route::get('/maintenance', function () {
 
 })->middleware('auth','role:6');
 
-Route::get('/customer', function () {
-
-})->middleware('auth','role:7');
+//Route::get('/customer', function () {
+//
+//})->middleware('auth','role:7');

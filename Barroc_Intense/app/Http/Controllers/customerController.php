@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Malfunction;
+use http\Client\Curl\User;
 use Illuminate\Http\Request;
 
 
@@ -15,10 +16,11 @@ class customerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
         $this->middleware('role:7');
-        return view('customer/index');
+        $user = User::find($id);
+        return view('customer/index', ['user' => $user]);
     }
 
     /**
@@ -57,7 +59,7 @@ class customerController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**

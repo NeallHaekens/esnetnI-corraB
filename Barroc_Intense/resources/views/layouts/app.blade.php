@@ -82,8 +82,8 @@
 
 
                             @elseif(Auth::user()->role_id == 7)
-                                <a class="nav-link" href="">Klant</a>
-                                <a href="{{ route('customer.index') }}"><button type="submit" name="send" class="btn submit-btn">Storings aanvraag</button></a>
+                                <a class="nav-link" href="{{ route('customer.index') }}">Klant</a>
+                                <a href=""><button type="submit" name="send" class="btn submit-btn">Storings aanvraag</button></a>
 
 
                             @elseif(Auth::user()->role_id == 1)
