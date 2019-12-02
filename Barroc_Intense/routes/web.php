@@ -43,7 +43,7 @@ Route::get('/Admin', function () {
 
 })->middleware('auth','role:1');
 
-Route::get('/CEO', function () {
+Route::get('/ceo', function () {
 
 })->middleware('auth','role:2');
 

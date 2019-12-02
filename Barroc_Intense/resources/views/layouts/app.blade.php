@@ -54,15 +54,14 @@
 
                     </ul>
 
+                        <a class="header-link" href="#quotation-section">Offerte aanvragen</a>
+                        <a class="header-nav" href="{{route('product.index')}}">Producten</a>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         @auth()
-                            @if (Auth::check()==false)
-                                <a class="header-link" href="#quotation-section">Offerte aanvragen</a>
-                                <a class="header-nav" href="{{route('product.index')}}">Producten</a>
-
-                            @elseif(Auth::user()->role_id == 4)
+                            {{--Auth::check()==false--}}
+                            @if(Auth::user()->role_id == 4)
                                 <li><a class="nav-link" href="">Onderdelen</a></li>
 
 
@@ -82,7 +81,7 @@
 
 
                             @elseif(Auth::user()->role_id == 7)
-                                <a class="nav-link"href="">Klant</a>
+                                <a class="nav-link"href="{{route('customer.create')}}">Klant</a>
                                 <a class="nav-link"href="">Storing melden?</a>
 
 

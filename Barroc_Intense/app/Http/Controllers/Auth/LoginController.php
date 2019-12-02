@@ -29,17 +29,26 @@ class LoginController extends Controller
     protected $redirectTo = '/home';
 //    protected function redirectTo()
 //    {
+//        if (auth()->user()->role_id == '1'){
+//            return view('admin');
+//        }
+//        if (auth()->user()->role_id == '2'){
+//            return view('ceo');
+//        }
+//        if (auth()->user()->role_id == '3') {
+//            return view('finance');
+//        }
 //        if (auth()->user()->role_id == '4'){
-//            return '/finance';
+//            return view('supplier/index');
 //        }
-//        if (auth()->user()->role_id == '3'){
-//            return '/supplier';
+//        if (auth()->user()->role_id == '5'){
+//            return view('sales');
 //        }
-//        if (auth()->user()->role_id == '2') {
-//            return '/maintenance';
+//        if (auth()->user()->role_id == '6'){
+//            return view('maintenance');
 //        }
-//        if (auth()->user()->role_id == '3'){
-//            return '/sales';
+//        if (auth()->user()->role_id == '7'){
+//            return view('customer');
 //        }
 //        return '/';
 //    }
