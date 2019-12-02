@@ -54,10 +54,51 @@
 
                     </ul>
 
-                    <a class="header-link" href="#quotation-section">Offerte aanvragen</a>
-                    <a class="header-nav" href="{{route('product.index')}}">Producten</a>
+
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        @auth()
+                            @if (Auth::check()==false)
+                                <a class="header-link" href="#quotation-section">Offerte aanvragen</a>
+                                <a class="header-nav" href="{{route('product.index')}}">Producten</a>
+
+                            @elseif(Auth::user()->role_id == 4)
+                                <li><a class="nav-link" href="">Onderdelen</a></li>
+
+
+                            @elseif(Auth::user()->role_id == 5)
+                                <li><a class="nav-link"href="">Sales</a></li>
+                                <li><a class="nav-link"href="">Klantgegevens</a></li>
+                                <li><a class="nav-link"href="">Registreer Klant</a></li>
+                                <li><a class="nav-link"href="">Prijsopgave aanmaken</a></li>
+
+
+                            @elseif(Auth::user()->role_id == 6)
+                               <a class="nav-link"href="">Maintenance</a>
+
+
+                            @elseif(Auth::user()->role_id == 3)
+                                <a class="nav-link"href="">Financien</a>
+
+
+                            @elseif(Auth::user()->role_id == 7)
+                                <a class="nav-link"href="">Klant</a>
+                                <a class="nav-link"href="">Storing melden?</a>
+
+
+                            @elseif(Auth::user()->role_id == 1)
+                                <li><a class="nav-link"href="">Onderdelen</a></li>
+                                <li><a class="nav-link"href="">Sales</a></li>
+                                <li><a class="nav-link"href="">Maintenance</a></li>
+                                <li><a class="nav-link"href="">Financien</a></li>
+                                <li><a class="nav-link"href="">Klant</a></li>
+                                <li><a class="nav-link"href="">Registreer Medewerker</a></li>
+
+                            @elseif(Auth::user()->role_id == 2)
+                                <li><a class="nav-link"href="{{ route('ceo.edit') }}">Goedkeuring<span class="yellow">.</span></a></li>
+                            @endif
+                        @endauth
+
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">

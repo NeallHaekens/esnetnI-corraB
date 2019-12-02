@@ -5,3 +5,6 @@
                             @endif
 
 register button code
+
+In de register van de klant kan ik vast role_id 7 zetten
+en in de register van de admin de register form die we nu hebben.
