@@ -79,6 +79,9 @@
 
                             @elseif(Auth::user()->role_id == 3)
                                 <a class="nav-link"href="">Financien</a>
+                                <a class="nav-link"href="">Contract Overzicht</a>
+                                <a class="nav-link"href="{{route('bkr.index')}}">BKR Overzicht</a>
+
 
 
                             @elseif(Auth::user()->role_id == 7)
