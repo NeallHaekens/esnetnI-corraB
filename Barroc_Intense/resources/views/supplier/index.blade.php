@@ -1,8 +1,14 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Gebruiker
- * Date: 18-11-2019
- * Time: 13:06
- */?>
-<h1>You are now in supplier</h1>
+@extends('../layouts.app')
+
+@section('title')
+    Supplier
+@endsection
+
+@section('content')
+    <section class="content">
+        <div class="container">
+
+        </div>
+    </section>
+
+@endsection

@@ -5,8 +5,11 @@ namespace App\Http\Controllers;
 use App\Malfunction;
 use Illuminate\Http\Request;
 
+
+
 class customerController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -14,6 +17,7 @@ class customerController extends Controller
      */
     public function index()
     {
+        $this->middleware('role:7');
         return view('customer/index');
     }
 
