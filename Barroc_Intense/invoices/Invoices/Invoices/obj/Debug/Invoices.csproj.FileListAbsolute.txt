@@ -1,0 +1,10 @@
+C:\xampp\htdocs\Barroc Intense\esnetnI-corraB\Barroc_Intense\invoices\Invoices\Invoices\bin\Debug\Invoices.exe.config
+C:\xampp\htdocs\Barroc Intense\esnetnI-corraB\Barroc_Intense\invoices\Invoices\Invoices\bin\Debug\Invoices.exe
+C:\xampp\htdocs\Barroc Intense\esnetnI-corraB\Barroc_Intense\invoices\Invoices\Invoices\bin\Debug\Invoices.pdb
+C:\xampp\htdocs\Barroc Intense\esnetnI-corraB\Barroc_Intense\invoices\Invoices\Invoices\obj\Debug\Invoices.csprojAssemblyReference.cache
+C:\xampp\htdocs\Barroc Intense\esnetnI-corraB\Barroc_Intense\invoices\Invoices\Invoices\obj\Debug\Invoices.MainForm.resources
+C:\xampp\htdocs\Barroc Intense\esnetnI-corraB\Barroc_Intense\invoices\Invoices\Invoices\obj\Debug\Invoices.Properties.Resources.resources
+C:\xampp\htdocs\Barroc Intense\esnetnI-corraB\Barroc_Intense\invoices\Invoices\Invoices\obj\Debug\Invoices.csproj.GenerateResource.cache
+C:\xampp\htdocs\Barroc Intense\esnetnI-corraB\Barroc_Intense\invoices\Invoices\Invoices\obj\Debug\Invoices.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Barroc Intense\esnetnI-corraB\Barroc_Intense\invoices\Invoices\Invoices\obj\Debug\Invoices.exe
+C:\xampp\htdocs\Barroc Intense\esnetnI-corraB\Barroc_Intense\invoices\Invoices\Invoices\obj\Debug\Invoices.pdb
