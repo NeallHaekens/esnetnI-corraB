@@ -53,10 +53,54 @@
                     <ul class="navbar-nav mr-auto">
 
                     </ul>
-
-                    <a class="header-link" href="#quotation-section">Offerte aanvragen</a>
+                    @guest
+                        <a class="header-link" href="#quotation-section">Offerte aanvragen</a>
+                        <a class="header-nav" href="{{route('product.index')}}">Producten</a>
+                    @endguest
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        @auth()
+                            {{--Auth::check()==false--}}
+                            @if(Auth::user()->role_id == 4)
+                                <li><a class="header-link" href="">Onderdelen</a></li>
+
+
+                            @elseif(Auth::user()->role_id == 5)
+                                <li><a class="header-link"href="">Sales</a></li>
+                                <li><a class="header-link"href="">Klantgegevens</a></li>
+                                <li><a class="header-link"href="">Registreer Klant</a></li>
+                                <li><a class="header-link"href="">Prijsopgave aanmaken</a></li>
+
+
+                            @elseif(Auth::user()->role_id == 6)
+                               <a class="header-link"href="{{ route('maintenance.index') }}">Maintenance</a>
+
+
+                            @elseif(Auth::user()->role_id == 3)
+                                <a class="nav-link"href="">Financien</a>
+                                <a class="nav-link"href="">Contract Overzicht</a>
+                                <a class="nav-link"href="{{route('Company.index')}}">BKR Overzicht</a>
+
+
+
+                            @elseif(Auth::user()->role_id == 7)
+                                <a class="header-link"href="{{route('customer.create')}}">Storing melden?</a>
+                                {{--<a class="header-link" href="{{route('customer.index')}}">Ik </a>--}}
+
+
+                            @elseif(Auth::user()->role_id == 1)
+                                <li><a class="header-link"href="">Onderdelen</a></li>
+                                <li><a class="header-link"href="">Sales</a></li>
+                                <li><a class="header-link"href="">Maintenance</a></li>
+                                <li><a class="header-link"href="">Financien</a></li>
+                                <li><a class="header-link"href="">Klant</a></li>
+                                <li><a class="header-link"href="">Registreer Medewerker</a></li>
+
+                            @elseif(Auth::user()->role_id == 2)
+                                <li><a class="header-link"href="{{ route('ceo.edit') }}">Goedkeuring<span class="yellow">.</span></a></li>
+                            @endif
+                        @endauth
+
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
@@ -64,16 +108,24 @@
                             </li>
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown"  class="header-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
+
+
+
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{route('customer.show', Auth::user()->id)}}">
+                                        {{ Auth::user()->name }} <img class="icons" src="{{asset('icons/account_yellow.png')}}" alt="">
+                                    </a>
+
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
+
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
@@ -88,6 +140,7 @@
         </nav>
     </div>
 </header>
+
 
         <section>
             @yield('content')
@@ -117,11 +170,11 @@
                 <div>
                     <ul>
                         <h4>Helpfull Links<span class="yellow">.</span></h4>
-                        <li class="lists"><a href="" class="links">Services</a></li>
-                        <li class="lists"><a href="" class="links">Support</a></li>
-                        <li class="lists"><a href="" class="links">Terms & Conditions</a></li>
-                        <li class="lists"><a href="" class="links">Privacy Policy</a></li>
-                        <li class="lists"><a href="" class="links">Cookies</a></li>
+                        <li class="lists"><a href="" class="links-header">Services</a></li>
+                        <li class="lists"><a href="" class="links-header">Support</a></li>
+                        <li class="lists"><a href="" class="links-header">Terms & Conditions</a></li>
+                        <li class="lists"><a href="" class="links-header">Privacy Policy</a></li>
+                        <li class="lists"><a href="" class="links-header">Cookies</a></li>
                     </ul>
                 </div>
             </div>

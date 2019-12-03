@@ -1,9 +1,14 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Gebruiker
- * Date: 18-11-2019
- * Time: 13:06
- */?>
+@extends('layouts.app')
 
-<h1>You are now in finance</h1>
+@section('title')
+    Finance
+@endsection
+
+@section('content')
+    <section class="content">
+        <div class="container">
+            <h2>Finance</h2>
+        </div>
+    </section>
+
+@endsection

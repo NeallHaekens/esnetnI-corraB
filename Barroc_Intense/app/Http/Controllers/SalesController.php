@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\sales;
+use App\User;
 use Illuminate\Http\Request;
 
 class SalesController extends Controller
@@ -24,7 +25,8 @@ class SalesController extends Controller
      */
     public function create()
     {
-        //
+        $roles = \App\Role::all();
+        return view('auth/register', ['roles'=>$roles]);
     }
 
     /**
@@ -35,7 +37,14 @@ class SalesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        User::insert([
+            'name' => $request->name,
+            'email' => $request->email,
+            'role_id ' => $request->role_id,
+            'password' => $request->password
+        ]);
+
+        return redirect()->route('sales.index');
     }
 
     /**
