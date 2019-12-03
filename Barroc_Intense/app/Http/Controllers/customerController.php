@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Malfunction;
+use http\Client\Curl\User;
 use Illuminate\Http\Request;
 use \App\user;
 
