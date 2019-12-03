@@ -73,7 +73,7 @@
 
 
                             @elseif(Auth::user()->role_id == 6)
-                               <a class="header-link"href="">Maintenance</a>
+                               <a class="header-link"href="{{ route('maintenance.index') }}">Maintenance</a>
 
 
                             @elseif(Auth::user()->role_id == 3)

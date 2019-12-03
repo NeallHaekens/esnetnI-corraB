@@ -20,11 +20,11 @@
                 <form action="{{ route('customer.store') }}" method="post" enctype="multipart/form-data">
                   @csrf
                     <div class="form-group">
-                        <label for="malfuction_type_id">Categorie</label>
-                        <select class="form-control" name="malcuntion_type_id" id="">
+                        <label for="malfunction_type_id">Categorie</label>
+                        <select class="form-control" name="malfunction_type_id" id="">
                             {{--Hier komt een foreach voor alle categorieen--}}
                             @foreach($malfunction_types as $malfunction_type)
-                                <option value="{{ $malfunction_type->id }}">{{ $malfunction_type->title }}</option>
+                                <option value="{{ $malfunction_type->id }}" name="malfunction_type_id">{{ $malfunction_type->title }}</option>
                             @endforeach
                         </select>
                     </div>
