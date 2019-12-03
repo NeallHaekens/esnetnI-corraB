@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\company;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
 
 class CompanyController extends Controller
 {
@@ -14,8 +15,8 @@ class CompanyController extends Controller
      */
     public function index()
     {
-        $checks = company::where('BKR', 0)->get();
-        return view('finance/bkr', ['checks'=>$checks]);
+        $companys = company::where('BKR', 0)->get();
+        return view('finance/bkr', ['companys'=>$companys]);
     }
 
     /**
@@ -23,11 +24,6 @@ class CompanyController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    Public function ChangeMultiple(Request $request)
-    {
-        //haal op welke zijn gechecked.
-        //stuur ze naar database om bij column bkr 1 in te vullen.
-    }
 
     public function create()
     {
@@ -62,20 +58,12 @@ class CompanyController extends Controller
      * @param  \App\company  $company
      * @return \Illuminate\Http\Response
      */
-    protected function updateMultiple(Request $request)
-    {
-        foreach ($request->get('bkrCheckBox', []) as $bkr) {
-                company::where('id', $bkr['id'])
-                ->update(array_except($bkr, ['BKR']));
-        }
-    }
 
-    public function edit(company $company)
+    public function edit($id)
     {
-//        foreach ($_POST as $post)
-//        {
-//            company::where('id',$post)->update(['BKR' => 1]);
-//        }
+        $company = company::find($id);
+
+        return view('finance/edit', ['company' => $company]);
     }
 
     /**
@@ -85,9 +73,26 @@ class CompanyController extends Controller
      * @param  \App\company  $company
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, company $company)
+    public function update(Request $request, $id)
     {
-        //
+        $company = company::find($id);
+        if ($request->bkr == 'denied')
+        {
+            $bkr = 0;
+        }
+        else
+        {
+            $bkr = 1;
+        }
+        $company->update([
+            'company_name' => $request->CName,
+            'phone_number' => $request->Phone,
+            'email' => $request->Email,
+            'adress' => $request->Adress,
+            'BKR' => $bkr
+        ]);
+
+        return redirect()->action('CompanyController@index');
     }
 
     /**
