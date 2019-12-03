@@ -20,7 +20,7 @@ class CreateCompanydetailsTable extends Migration
             $table->bigInteger('phone_number');
             $table->string('email');
             $table->string('adress');
-            $table->boolean('BKR', null);
+            $table->boolean('BKR')->default(0);
 
             $table->timestamps();
 

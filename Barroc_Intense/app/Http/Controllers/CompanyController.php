@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\company;
 use Illuminate\Http\Request;
 
-class bkrController extends Controller
+class CompanyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,8 @@ class bkrController extends Controller
      */
     public function index()
     {
-        return view('finance/index');
+        $checks = company::where('BKR', 0)->get();
+        return view('finance/bkr', ['checks'=>$checks]);
     }
 
     /**
@@ -21,6 +23,12 @@ class bkrController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    Public function ChangeMultiple(Request $request)
+    {
+        //haal op welke zijn gechecked.
+        //stuur ze naar database om bij column bkr 1 in te vullen.
+    }
+
     public function create()
     {
         //
@@ -40,10 +48,10 @@ class bkrController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\company  $company
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(company $company)
     {
         //
     }
@@ -51,22 +59,33 @@ class bkrController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\company  $company
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    protected function updateMultiple(Request $request)
     {
-        //
+        foreach ($request->get('bkrCheckBox', []) as $bkr) {
+                company::where('id', $bkr['id'])
+                ->update(array_except($bkr, ['BKR']));
+        }
+    }
+
+    public function edit(company $company)
+    {
+//        foreach ($_POST as $post)
+//        {
+//            company::where('id',$post)->update(['BKR' => 1]);
+//        }
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\company  $company
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, company $company)
     {
         //
     }
@@ -74,10 +93,10 @@ class bkrController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\company  $company
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(company $company)
     {
         //
     }

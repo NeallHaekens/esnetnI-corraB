@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53c5dccf-a9b3-4f36-ba72-f4dc1e4f6e20" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/resources/views/customer/edit.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/views/customer/show.blade.php" afterDir="false" />
@@ -17,6 +18,12 @@
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OfferController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/bkrController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/finance/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/finance/index.blade.php" afterDir="false" />
 >>>>>>> master
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/bkrController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_085634_create_companydetails_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_085634_create_companydetails_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/finance/bkr.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/finance/bkr.blade.php" afterDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -32,8 +39,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CompanyController.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
             <state relative-caret-position="358">
               <caret line="115" column="90" lean-forward="true" selection-start-line="115" selection-start-column="90" selection-end-line="115" selection-end-column="111" />
@@ -83,11 +91,16 @@
             <state relative-caret-position="187">
               <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="50" />
 >>>>>>> master
+=======
+            <state relative-caret-position="272">
+              <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/public/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -99,10 +112,17 @@
             <state relative-caret-position="170">
               <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
 >>>>>>> master
+=======
+        <entry file="file://$PROJECT_DIR$/app/company.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/resources/views/customer/index.blade.php">
@@ -135,6 +155,13 @@
             <state relative-caret-position="68">
               <caret line="4" selection-start-line="4" selection-end-line="4" />
 >>>>>>> master
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/finance/bkr.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="79" selection-start-line="6" selection-start-column="79" selection-end-line="6" selection-end-column="79" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -152,7 +179,11 @@
       <find>navbar-</find>
       <find>coo</find>
       <find>lin</find>
+<<<<<<< Updated upstream
       <find>supplies</find>
+=======
+      <find>bkr</find>
+>>>>>>> Stashed changes
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,6 +192,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         <option value="$PROJECT_DIR$/resources/views/sales/index.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_19_090510_create_quotations_table.php" />
@@ -169,8 +201,9 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_11_19_090430_create_notes_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_19_090630_create_purchases_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_19_090323_create_roles_table.php" />
+=======
+>>>>>>> Stashed changes
         <option value="$PROJECT_DIR$/database/migrations/2019_11_19_091009_create_supplies_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_11_19_085634_create_companydetails_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_19_085816_create_notes_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_19_090514_create_quotations_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_19_090607_create_purchases_table.php" />
@@ -222,15 +255,22 @@
         <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/FinanceController.php" />
         <option value="$PROJECT_DIR$/resources/views/finance/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/finance/bkr.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/OfferController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_12_02_091752_create_factuur_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_12_02_091752_create_bkr_check_table.php" />
+        <option value="$PROJECT_DIR$/app/offer.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_11_19_085634_create_companydetails_table.php" />
+        <option value="$PROJECT_DIR$/app/bkr.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/bkrController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/app/offer.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+<<<<<<< Updated upstream
 >>>>>>> master
+=======
+        <option value="$PROJECT_DIR$/app/company.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" />
+        <option value="$PROJECT_DIR$/resources/views/finance/bkr.blade.php" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -532,12 +572,18 @@
       <workItem from="1575374690710" duration="4508000" />
 =======
       <workItem from="1575273675242" duration="1120000" />
+<<<<<<< Updated upstream
       <workItem from="1575289579116" duration="1630000" />
 >>>>>>> master
+=======
+      <workItem from="1575289579116" duration="4551000" />
+      <workItem from="1575294687948" duration="8000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="65518000" />
   </component>
@@ -548,13 +594,19 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20536913" />
 =======
     <option name="totallyTimeSpent" value="60487000" />
+=======
+    <option name="totallyTimeSpent" value="63416000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
+<<<<<<< Updated upstream
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28598973" />
 >>>>>>> master
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28984576" />
+>>>>>>> Stashed changes
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -604,6 +656,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/resources/views/customer/products.blade.php">
 =======
@@ -638,6 +691,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="505">
@@ -780,13 +835,7 @@
     <entry file="file://$PROJECT_DIR$/database/migrations/2013_11_19_084638_create_roles_table.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_12_02_091752_create_bkr_check_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_12_02_091752_create_bkr_check_table.php" />
     <entry file="file://$PROJECT_DIR$/database/seeds/RoleTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -794,6 +843,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/database/seeds/UserTableSeeder.php" />
     <entry file="file://$PROJECT_DIR$/database/seeds/Users.php" />
@@ -854,6 +904,10 @@
     <entry file="file://$PROJECT_DIR$/app/supplier.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+=======
+    <entry file="file://$PROJECT_DIR$/app/sales.php" />
+    <entry file="file://$PROJECT_DIR$/app/supplier.php" />
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -865,6 +919,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
 =======
@@ -874,6 +929,10 @@
     <entry file="file://$PROJECT_DIR$/app/maintenance.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+=======
+    <entry file="file://$PROJECT_DIR$/app/finance.php" />
+    <entry file="file://$PROJECT_DIR$/app/maintenance.php" />
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/app/Role.php">
 >>>>>>> master
       <provider selected="true" editor-type-id="text-editor">
@@ -885,9 +944,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/product.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/product.php" />
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MalfunctionQuestion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -895,6 +952,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -971,57 +1029,67 @@
           <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
 =======
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/OfferController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#40#54#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/bkr.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/bkrController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+=======
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/OfferController.php" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/bkr.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/finance/index.blade.php">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="22" selection-start-column="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/layout.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FinanceController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-70" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/finance/bkr.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="425">
+          <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_19_085634_create_companydetails_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="47" lean-forward="true" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/offer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/companydetails.php" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/bkrController.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="82" column="69" selection-start-line="82" selection-start-column="69" selection-end-line="82" selection-end-column="69" />
+        <state relative-caret-position="221">
+          <caret line="82" column="88" selection-start-line="82" selection-start-column="85" selection-end-line="82" selection-end-column="88" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FinanceController.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="425">
           <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
 >>>>>>> master
@@ -1098,21 +1166,37 @@
 =======
         <state relative-caret-position="187">
           <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="50" />
+=======
+        <state relative-caret-position="68">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/offer.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CompanyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+>>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/company.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/finance/bkr.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="408">
           <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
 >>>>>>> master
+=======
+        <state relative-caret-position="102">
+          <caret line="6" column="79" selection-start-line="6" selection-start-column="79" selection-end-line="6" selection-end-column="79" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>

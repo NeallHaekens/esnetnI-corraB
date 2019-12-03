@@ -442,3 +442,8 @@ footer{
     }
 }
 
+/*Finance BKR*/
+
+.Wrapper{
+    display: flex;
+}

@@ -31,7 +31,9 @@ Route::post('/sendemail/send', 'SendEmailController@send');
 
 Route::resource('quotations', 'QuotationsController');
 
-Route::resource('bkr', 'bkrController');
+Route::resource('Company', 'CompanyController');
+
+Route::post('/bkrUpdate',array('as'=>'BKR','uses'=>'CompanyController@ChangeMultiple'));
 
 Route::resource('product', 'ProductController');
 
