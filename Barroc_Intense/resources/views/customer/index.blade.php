@@ -17,9 +17,7 @@
 
                 <a href="">Persoons gegevens</a>
 
-                {{--<a href="customer/malfunction">Offerte aanmaken</a>--}}
-
-                {{--<a href="customer/malfunction"><button type="submit" name="send" class="btn submit-btn">Storings aanvraag</button></a>--}}
+                {{--<a class="list" href="{{route('customer.show', $customer->id)}}">{{$customer->productName}} Gegevens.</a>--}}
             </div>
         </div>
     </section>

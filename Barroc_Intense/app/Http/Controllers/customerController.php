@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Malfunction;
 use Illuminate\Http\Request;
-
+use \App\user;
 
 
 class customerController extends Controller
@@ -15,9 +15,14 @@ class customerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+//    public function __construct()
+//    {
+//        $this->middleware('auth' , 'role:7');
+//    }
+
     public function index()
     {
-        $this->middleware('role:7');
         return view('customer/index');
     }
 
@@ -58,6 +63,12 @@ class customerController extends Controller
     public function show($id)
     {
         //
+//        $customer = User::query()
+//            ->where('id', $id)
+//            ->first();
+
+        $customer = User::find($id);
+        return view('customer/show', ['customer' => $customer] );
     }
 
     /**
@@ -69,6 +80,15 @@ class customerController extends Controller
     public function edit($id)
     {
         //
+
+        $customer = User::query()
+            ->where('id', $id)
+            ->first();
+        $customer = USer::find($id);
+
+        return view('customer.edit', [
+            'customer' => $customer
+        ]);
     }
 
     /**
@@ -81,6 +101,15 @@ class customerController extends Controller
     public function update(Request $request, $id)
     {
         //
+        // 1. ingekomen aanpassingen aanpassen op de juiste plaats
+        // 2. redirecten naar show of index
+        $customer = User::find($id);
+
+        $customer->update([
+            'name'           => $request->name,
+            'email'          => $request->email,
+        ]);
+        return redirect()->route('customer.show', $id);
     }
 
     /**

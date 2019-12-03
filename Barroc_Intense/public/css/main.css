@@ -245,6 +245,7 @@ h2, h3, h4, h5{
 .header-link{
     color: #ffffff;
     text-decoration: none;
+    margin: 0px 3px;
 }
 .header-link:hover {
     color: #ffd700;
@@ -345,6 +346,7 @@ h2, h3, h4, h5{
     background: #ffd700;
     border: solid #ffd700;
     color: white;
+    border-radius: 3px;
 }
 .submit-btn:hover{
     background: #ffc500;
@@ -387,6 +389,12 @@ footer{
     background-color: #000000;
     border: solid #000000 1.5px;
     /*background: transparent;*/
+}
+
+/*Customer*/
+.edit-form{
+    margin: 0 auto;
+    width: 50%;
 }
 
 
