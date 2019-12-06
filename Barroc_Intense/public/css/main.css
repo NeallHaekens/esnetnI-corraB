@@ -233,6 +233,15 @@ h2, h3, h4, h5{
     color: white;
     text-decoration: none;
 }
+.links-header2{
+    font-size: 13px;
+    color: #ffd700;
+    text-decoration: none;
+}
+.links-header2:hover{
+    color: #515151;
+    text-decoration: none;
+}
 .lists{
     list-style: none;
 }
