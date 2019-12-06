@@ -39,4 +39,8 @@ class User extends Authenticatable
     public function roles() {
         return $this->belongsTo('\App\Role', 'role_id');
     }
+
+    public function Malfunction(){
+        return $this->hasMany('\App\Malfunction', 'client_id');
+    }
 }
