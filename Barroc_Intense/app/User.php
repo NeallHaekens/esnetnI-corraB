@@ -40,6 +40,10 @@ class User extends Authenticatable
         return $this->belongsTo('\App\Role', 'role_id');
     }
 
+    public function Malfunction(){
+        return $this->hasMany('\App\Malfunction', 'client_id');
+    }
+
     public function company() {
         return $this->hasOne('\App\company','user_id');
     }

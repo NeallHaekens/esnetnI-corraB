@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 
@@ -14,7 +15,11 @@ class maintenanceController extends Controller
      */
     public function index()
     {
+
         $malfunctions = \App\Malfunction::all();
+
+
+
         return view('maintenance.index', ['malfunctions' => $malfunctions]);
     }
 

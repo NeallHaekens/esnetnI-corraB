@@ -14,8 +14,13 @@
     <section class="content">
         <div class="container">
             <ul>
+
+
                 @foreach($malfunctions as $malfunction)
-                   <li>{{ $malfunction->client_id }}</li>
+
+                       <p>{{ $malfunction->description }}</p>
+
+
                 @endforeach
             </ul>
         </div>
