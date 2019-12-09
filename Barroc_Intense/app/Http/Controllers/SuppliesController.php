@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\supplier;
+use App\supply;
 use Illuminate\Http\Request;
 
-class SupplierController extends Controller
+class SuppliesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class SupplierController extends Controller
      */
     public function index()
     {
-        return view('supplier/index');
+        //
     }
 
     /**
@@ -41,10 +41,10 @@ class SupplierController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\supplier  $supplier
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(supplier $supplier)
+    public function show($id)
     {
         //
     }
@@ -52,10 +52,10 @@ class SupplierController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\supplier  $supplier
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(supplier $supplier)
+    public function edit($id)
     {
         //
     }
@@ -64,10 +64,10 @@ class SupplierController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\supplier  $supplier
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, supplier $supplier)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,10 +75,10 @@ class SupplierController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\supplier  $supplier
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(supplier $supplier)
+    public function destroy($id)
     {
         //
     }

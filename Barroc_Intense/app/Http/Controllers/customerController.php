@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Malfunction;
-use http\Client\Curl\User;
 use Illuminate\Http\Request;
-use \App\user;
+use \App\User;
 
 
 class customerController extends Controller
@@ -85,7 +84,7 @@ class customerController extends Controller
         $customer = User::query()
             ->where('id', $id)
             ->first();
-        $customer = USer::find($id);
+        $customer = User::find($id);
 
         return view('customer.edit', [
             'customer' => $customer

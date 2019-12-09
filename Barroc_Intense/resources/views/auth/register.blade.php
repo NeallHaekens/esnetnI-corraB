@@ -45,7 +45,7 @@
                             <div class="col-md-6">
                                 <select name="role_id" id="role_id">
                                     @foreach($roles as $role)
-                                        <option value="{{$role->id}}">{{$role->title}}</option>
+                                        <option name="role_id" value="{{$role->id}}">{{$role->title}}</option>
                                     @endforeach
                                 </select>
 

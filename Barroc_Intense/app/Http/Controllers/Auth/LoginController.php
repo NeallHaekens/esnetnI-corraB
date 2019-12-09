@@ -26,9 +26,47 @@ class LoginController extends Controller
      * @var string
      */
 
-    protected $redirectTo = '/';
-//    protected function redirectTo()
+    protected $redirectTo = '/home';
+
+    public function redirectTo()
+    {
+        $user = \Auth::user();
+
+        switch ($user->role_id) {
+            case 1:
+                // Admin
+                return 'admin';
+                break;
+            case 2:
+                return 'ceo';
+                break;
+            case 3:
+                return 'finance';
+                break;
+            case 4:
+                return 'supplies';
+                break;
+            case 5:
+                // Head maintenance
+                return 'sales';
+                break;
+            case 6:
+                return 'aintenance';
+                break;
+            case 7:
+                // Customer
+                return 'customer';
+                break;
+        }
+    }
+
+
+
+
+
+//    public function redirectTo()
 //    {
+//
 //        if (auth()->user()->role_id == '1'){
 //            return redirect()->route('admin.index');
 //        }
@@ -39,7 +77,7 @@ class LoginController extends Controller
 //            return redirect()->route('finance.index');
 //        }
 //        if (auth()->user()->role_id == '4'){
-//            return redirect()->route('supplier/index');
+//            return redirect()->route('supplies/index');
 //        }
 //        if (auth()->user()->role_id == '5'){
 //            return redirect()->route('sales.index');
