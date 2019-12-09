@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Auth;
 use App\Malfunction;
+//use http\Client\Curl\User;
 use Illuminate\Http\Request;
 use \App\User;
 
@@ -45,13 +46,17 @@ class customerController extends Controller
      */
     public function store(Request $request)
     {
-        //            Product::insert([
-        //                'name'           => $request->name,
-        //                'price'          => $request->price,
-        //                'categories_id'  => $request->categorie_id
-        //            ])
 
 
+        $user = Auth::user();
+
+
+
+        \App\Malfunction::insert([
+            'client_id' => $user->id,
+            'malfunction_type_id' => $request->malfunction_type_id,
+            'description' => $request->description
+        ]);
     }
 
     /**

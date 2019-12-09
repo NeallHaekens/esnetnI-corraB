@@ -9,11 +9,28 @@
 @section('content')
     <section class="content">
         <div class="container">
+            <h2>Klant Pagina<span class="yellow">.</span></h2>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
             <div>
-                <h3>{{$customer->name}}</h3>
-                <p>Email: {{$customer->email}} </p>
+                <h3>Persoons Gegevens<span class="yellow">.</span></h3>
+                <p>
+                    Naam : {{ $customer->name }}
+                </p>
+                <p>
+                    E-mail : {{ $customer->email }}
+                </p>
                 <a class="submit-btn" href="{{route('customer.edit', Auth::user()->id)}}">Gegevens aanpassen<span class="yellow">.</span></a>
             </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <h3>Lease Gegeven<span class="yellow">.</span></h3>
         </div>
     </section>
 @endsection

@@ -21,7 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('finance', 'FinanceController');
 
-Route::resource('maintenance', 'MaintenanceController');
+Route::resource('maintenance', 'maintenanceController');
 
 Route::resource('sales', 'SalesController');
 
@@ -31,10 +31,11 @@ Route::post('/sendemail/send', 'SendEmailController@send');
 
 Route::resource('quotations', 'QuotationsController');
 
-Route::resource('bkr', 'bkrController');
+Route::resource('Company', 'CompanyController');
+
+Route::post('/bkrUpdate',array('as'=>'BKR','uses'=>'CompanyController@ChangeMultiple'));
 
 Route::resource('product', 'ProductController');
 
 Route::resource('customer', 'customerController');
-
 

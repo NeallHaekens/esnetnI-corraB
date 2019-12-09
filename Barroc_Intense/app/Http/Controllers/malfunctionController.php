@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\maintenance;
 use Illuminate\Http\Request;
 
-class MaintenanceController extends Controller
+class malfunctionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +13,7 @@ class MaintenanceController extends Controller
      */
     public function index()
     {
-        return view('maintenance/index');
+        return view('customer.create');
     }
 
     /**
@@ -41,10 +40,10 @@ class MaintenanceController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\maintenance  $maintenance
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(maintenance $maintenance)
+    public function show($id)
     {
         //
     }
@@ -52,10 +51,10 @@ class MaintenanceController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\maintenance  $maintenance
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(maintenance $maintenance)
+    public function edit($id)
     {
         //
     }
@@ -64,10 +63,10 @@ class MaintenanceController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\maintenance  $maintenance
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, maintenance $maintenance)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,10 +74,10 @@ class MaintenanceController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\maintenance  $maintenance
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(maintenance $maintenance)
+    public function destroy($id)
     {
         //
     }

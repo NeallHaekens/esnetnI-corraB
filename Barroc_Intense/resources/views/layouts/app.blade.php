@@ -73,13 +73,13 @@
 
 
                             @elseif(Auth::user()->role_id == 6)
-                               <a class="header-link"href="">Maintenance</a>
+                               <a class="header-link"href="{{ route('maintenance.index') }}">Maintenance</a>
 
 
                             @elseif(Auth::user()->role_id == 3)
                                 <a class="nav-link"href="">Financien</a>
                                 <a class="nav-link"href="">Contract Overzicht</a>
-                                <a class="nav-link"href="{{route('bkr.index')}}">BKR Overzicht</a>
+                                <a class="nav-link"href="{{route('Company.index')}}">BKR Overzicht</a>
 
 
 
@@ -187,3 +187,4 @@
     </footer>
 </body>
 </html>
+
