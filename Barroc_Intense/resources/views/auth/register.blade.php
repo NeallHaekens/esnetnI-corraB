@@ -39,23 +39,23 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="role" class="col-md-4 col-form-label text-md-right">Rol</label>
+                        {{--<div class="form-group row">--}}
+                            {{--<label for="role" class="col-md-4 col-form-label text-md-right">Rol</label>--}}
 
-                            <div class="col-md-6">
-                                <select name="role_id" id="role_id">
-                                    @foreach($roles as $role)
-                                        <option name="role_id" value="{{$role->id}}">{{$role->title}}</option>
-                                    @endforeach
-                                </select>
+                            {{--<div class="col-md-6">--}}
+                                {{--<select class="dropdown-role">--}}
+                                    {{--@foreach($roles as $role)--}}
+                                        {{--<option  id="role_id" name="role_id" value="{{$role->id}}">{{$role->title}}</option>--}}
+                                    {{--@endforeach--}}
+                                {{--</select>--}}
 
-                                @error('role')
-                                <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+                                {{--@error('role')--}}
+                                {{--<span class="invalid-feedback" role="alert">--}}
+                                        {{--<strong>{{ $message }}</strong>--}}
+                                    {{--</span>--}}
+                                {{--@enderror--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
 
 
                         <div class="form-group row">

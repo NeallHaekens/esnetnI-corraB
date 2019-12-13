@@ -1,7 +1,8 @@
+@extends('layouts.app')
 
-@extends('app')
+@section('title', 'Contract')
 
-@section('contract')
+@section('content')
 
     <h1>Create Contract</h1>
 

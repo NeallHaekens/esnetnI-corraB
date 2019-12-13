@@ -39,3 +39,8 @@ Route::resource('product', 'ProductController');
 
 Route::resource('customer', 'customerController');
 
+Route::resource('notes', 'NotesController');
+
+Route::resource('head-maintenance', 'headmaintenanceController');
+
+

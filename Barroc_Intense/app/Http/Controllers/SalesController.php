@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-
+use Auth;
 use App\Note;
 use App\User;
+use App\Role;
 use Illuminate\Http\Request;
 
 class SalesController extends Controller
@@ -27,7 +28,7 @@ class SalesController extends Controller
      */
     public function create()
     {
-        $roles = \App\Role::all();
+        $roles = Role::all();
         return view('auth/register', ['roles'=>$roles]);
     }
 
@@ -39,10 +40,16 @@ class SalesController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', 'min:8', 'confirmed']
+        ]);
+
         User::insert([
+            'role_id' => 7,
             'name' => $request->name,
             'email' => $request->email,
-            'role_id ' => $request->role_id,
             'password' => $request->password
         ]);
 

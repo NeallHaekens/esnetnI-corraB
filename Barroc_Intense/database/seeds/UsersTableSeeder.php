@@ -14,7 +14,7 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
 
-        \App\User::insert([
+        User::insert([
             'role_id'       => 1,
             'name'          => 'admin',
             'email'         => 'admin@barroc.nl',
@@ -22,7 +22,7 @@ class UsersTableSeeder extends Seeder
 
         ]);
 
-        \App\User::insert([
+        User::insert([
             'role_id'       => 2,
             'name'          => 'ceo',
             'email'         => 'ceo@barroc.nl',
@@ -30,7 +30,7 @@ class UsersTableSeeder extends Seeder
 
         ]);
 
-        \App\User::insert([
+        User::insert([
             'role_id'       => 3,
             'name'          => 'finance',
             'email'         => 'finance@barroc.nl',
@@ -38,7 +38,7 @@ class UsersTableSeeder extends Seeder
 
         ]);
 
-         \App\User::insert([
+         User::insert([
             'role_id'       => 4,
             'name'          => 'supplies',
             'email'         => 'supplies@barroc.nl',
@@ -46,7 +46,7 @@ class UsersTableSeeder extends Seeder
 
         ]);
 
-        \App\User::insert([
+        User::insert([
             'role_id'       => 5,
             'name'          => 'sales',
             'email'         => 'sales@barroc.nl',
@@ -54,7 +54,7 @@ class UsersTableSeeder extends Seeder
 
         ]);
 
-        \App\User::insert([
+        User::insert([
             'role_id'       => 6,
             'name'          => 'maintenance',
             'email'         => 'maintenance@barroc.nl',
@@ -62,8 +62,16 @@ class UsersTableSeeder extends Seeder
 
         ]);
 
-        \App\User::insert([
+        User::insert([
             'role_id'       => 7,
+            'name'          => 'Head-off maintenance',
+            'email'         => 'head-maintenance@barroc.nl',
+            'password'      => Hash::make('Barroc123')
+
+        ]);
+
+        User::insert([
+            'role_id'       => 8,
             'name'          => 'customer',
             'email'         => 'customer@barroc.nl',
             'password'      => Hash::make('Barroc123')

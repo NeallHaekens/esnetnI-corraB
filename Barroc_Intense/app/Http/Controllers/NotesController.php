@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
+use App\User;
+use App\Note;
 use Illuminate\Http\Request;
 
 class NotesController extends Controller
@@ -14,6 +17,8 @@ class NotesController extends Controller
     public function index()
     {
         //
+        $notes = Note::all();
+        return view('notes/index', ['notes'=> $notes]);
     }
 
     /**
@@ -23,8 +28,9 @@ class NotesController extends Controller
      */
     public function create()
     {
-        //
+        $users = User::all();
 
+        return view('notes/create', ['users' => $users]);
     }
 
     /**
@@ -36,6 +42,17 @@ class NotesController extends Controller
     public function store(Request $request)
     {
         //
+        $user = Auth::user();
+
+        Note::insert([
+            'sales_id'      => $user->id,
+            'customer_id'   => $request->customer_id,
+            'note'          => $request->note
+        ]);
+
+        return redirect()->route('sales.index');
+
+
     }
 
     /**

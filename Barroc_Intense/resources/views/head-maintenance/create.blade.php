@@ -1,15 +1,12 @@
 @extends('layouts.app')
 
-@section('title')
-    Aantekening maken
-@endsection
-
+@section('title', 'head-off Maintenance')
 
 @section('content')
 
     <section class="content">
         <div class="container">
-            <p>hooi</p>
+
         </div>
     </section>
 

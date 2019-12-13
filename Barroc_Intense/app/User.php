@@ -37,7 +37,7 @@ class User extends Authenticatable
 
 
     public function roles() {
-        return $this->belongsTo('\App\Role', 'role_id');
+        return $this->HasOne('App\Role','role_id','id');
     }
 
     public function Malfunction(){
