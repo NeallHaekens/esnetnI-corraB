@@ -19,7 +19,6 @@ class CreateQuotationsTable extends Migration
             $table->unsignedBigInteger('customer_id');
             $table->unsignedBigInteger('lease_id');
             $table->unsignedBigInteger('supply_id');
-            $table->boolean('BKR_check');
             $table->string('price');
             $table->timestamps();
 
