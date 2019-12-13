@@ -44,14 +44,13 @@ class User extends Authenticatable
         return $this->hasMany('\App\Malfunction', 'client_id');
     }
 
+    public function leases()
+    {
+        return $this->hasMany('\App\lease', 'customer_id');
+    }
+
     public function company() {
         return $this->hasOne('\App\company','user_id');
     }
-
-    public function Leases() {
-        return $this->hasMany('\App\leases_map\leases','customer_id');
-    }
-
-
 
 }

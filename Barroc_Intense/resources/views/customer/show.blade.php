@@ -31,6 +31,20 @@
     <section class="content">
         <div class="container">
             <h3>Lease Gegeven<span class="yellow">.</span></h3>
+            <p>
+                @foreach($leases as $lease)
+                {{ $lease->User->name }}
+                @endforeach
+            </p>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <h3>Factuur Gegevens<span class="yellow">.</span></h3>
+            <p>
+
+            </p>
         </div>
     </section>
 @endsection

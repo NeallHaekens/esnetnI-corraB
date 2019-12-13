@@ -6,6 +6,7 @@ use App\Malfunction;
 //use http\Client\Curl\User;
 use Illuminate\Http\Request;
 use \App\User;
+use \App\lease;
 
 
 class customerController extends Controller
@@ -73,7 +74,11 @@ class customerController extends Controller
 //            ->first();
 
         $customer = User::find($id);
-        return view('customer/show', ['customer' => $customer] );
+
+        $leases = lease::all();
+
+//        dd($leases);
+        return view('customer/show', ['customer' => $customer], ['leases' => $leases] );
     }
 
     /**
@@ -114,6 +119,9 @@ class customerController extends Controller
             'name'           => $request->name,
             'email'          => $request->email,
         ]);
+
+
+
         return redirect()->route('customer.show', $id);
     }
 
