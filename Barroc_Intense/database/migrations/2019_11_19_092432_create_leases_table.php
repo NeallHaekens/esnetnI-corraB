@@ -22,7 +22,7 @@ class CreateLeasesTable extends Migration
 
             $table->foreign('lease_type_id')
                 ->references('id')
-                ->on('leases');
+                ->on('lease_types');
 
             $table->foreign('customer_id')
                 ->references('id')

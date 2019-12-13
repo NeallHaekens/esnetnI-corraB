@@ -55,49 +55,41 @@
                     </ul>
                     @guest
                         <a class="header-link" href="#quotation-section">Offerte aanvragen</a>
-                        <a class="header-nav" href="{{route('product.index')}}">Producten</a>
+                        {{--<a class="header-nav" href="{{asset('product/index')}}">Producten</a>--}}
                     @endguest
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         @auth()
-                            {{--Auth::check()==false--}}
                             @if(Auth::user()->role_id == 4)
-                                <li><a class="header-link" href="">Onderdelen</a></li>
-
+                                <li><a class="header-link" href="{{asset('supplier')}}">Onderdelen</a></li>
 
                             @elseif(Auth::user()->role_id == 5)
-                                <li><a class="header-link"href="">Sales</a></li>
-                                <li><a class="header-link"href="">Klantgegevens</a></li>
-                                <li><a class="header-link"href="">Registreer Klant</a></li>
-                                <li><a class="header-link"href="">Prijsopgave aanmaken</a></li>
-
+                                <li><a class="header-link" href="{{asset('sales')}}">Klanten</a></li>
+                                <li><a class="header-link" href="{{asset('quotations/create')}}">Offerte aanmaken</a></li>
+                                <li><a class="header-link" href="{{ asset('sales/create') }}">{{ __('Registeer hier een klant.') }}</a></li>
+                                <li><a class="header-link" href="{{asset('offer/create')}}">Prijsopgave aanmaken</a></li>
 
                             @elseif(Auth::user()->role_id == 6)
                                <a class="header-link"href="{{ route('maintenance.index') }}">Maintenance</a>
 
-
                             @elseif(Auth::user()->role_id == 3)
-                                <a class="nav-link"href="">Financien</a>
-                                <a class="nav-link"href="">Contract Overzicht</a>
-                                <a class="nav-link"href="{{route('Company.index')}}">BKR Overzicht</a>
-
-
+                                <a class="nav-link"href="{{asset('')}}">Financien</a>
+                                <a class="nav-link"href="{{asset('')}}">Contract Overzicht</a>
+                                <a class="nav-link"href="{{asset('Company.index')}}">BKR Overzicht</a>
 
                             @elseif(Auth::user()->role_id == 7)
-                                <a class="header-link"href="{{route('customer.create')}}">Storing melden?</a>
-                                {{--<a class="header-link" href="{{route('customer.index')}}">Ik </a>--}}
-
+                                <a class="header-link"href="{{asset('customer.create')}}">Storing melden?</a>
 
                             @elseif(Auth::user()->role_id == 1)
-                                <li><a class="header-link"href="">Onderdelen</a></li>
-                                <li><a class="header-link"href="">Sales</a></li>
-                                <li><a class="header-link"href="">Maintenance</a></li>
-                                <li><a class="header-link"href="">Financien</a></li>
-                                <li><a class="header-link"href="">Klant</a></li>
-                                <li><a class="header-link"href="">Registreer Medewerker</a></li>
+                                <li><a class="header-link"href="{{asset('products.index')}}">Onderdelen</a></li>
+                                <li><a class="header-link"href="{{asset('sales')}}">Sales</a></li>
+                                <li><a class="header-link"href="{{asset('maintenance')}}">Maintenance</a></li>
+                                <li><a class="header-link"href="{{asset('finance')}}">Financien</a></li>
+                                <li><a class="header-link"href="{{asset('customer')}}">Klant</a></li>
+                                <li><a class="header-link"href="{{asset('sales.create') }}">Registreer Medewerker</a></li>
 
                             @elseif(Auth::user()->role_id == 2)
-                                <li><a class="header-link"href="{{ route('ceo.edit') }}">Goedkeuring<span class="yellow">.</span></a></li>
+                                <li><a class="header-link"href="{{asset('ceo.edit') }}">Goedkeuring<span class="yellow">.</span></a></li>
                             @endif
                         @endauth
 

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use \App\supply_type;
 
 class Supply_typeTableSeeder extends Seeder
 {
@@ -11,13 +12,13 @@ class Supply_typeTableSeeder extends Seeder
      */
     public function run()
     {
-        \App\supply_type::insert([
+        supply_type::insert([
             'title'=> 'Koffiemachine'
         ]);
-        \App\supply_type::insert([
+        supply_type::insert([
             'title'=> 'Koffieboon'
         ]);
-        \App\supply_type::insert([
+        supply_type::insert([
             'title'=> 'Gemalen koffieboon'
         ]);
 

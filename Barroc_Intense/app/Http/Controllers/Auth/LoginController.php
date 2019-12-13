@@ -34,29 +34,31 @@ class LoginController extends Controller
 
         switch ($user->role_id) {
             case 1:
-                // Admin
                 return 'admin';
-                break;
+                    break;
             case 2:
                 return 'ceo';
-                break;
+                    break;
             case 3:
                 return 'finance';
-                break;
+                    break;
             case 4:
                 return 'supplies';
-                break;
+                    break;
             case 5:
                 // Head maintenance
                 return 'sales';
                 break;
             case 6:
-                return 'aintenance';
-                break;
+                return 'maintenance';
+                    break;
             case 7:
+                return 'head-maintenance';
+                    break;
+            case 8:
                 // Customer
                 return 'customer';
-                break;
+                    break;
         }
     }
 

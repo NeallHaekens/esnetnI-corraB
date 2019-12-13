@@ -172,7 +172,19 @@
 }
 
 /*Algemene aanpassingen*/
-
+.dropdown-role{
+    width: 330px;
+    height: 35px;
+    border-radius: 3px;
+    border:1px solid rgba(255, 215, 0 , 0.4);
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.dropdown-role:focus{
+    border-color: #ffed4a;
+    backdrop-filter: none;
+}
 html{
     scroll-behavior: smooth;
 }

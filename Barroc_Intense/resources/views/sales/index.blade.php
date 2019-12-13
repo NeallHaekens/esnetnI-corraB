@@ -3,17 +3,7 @@
 @section('content')
     <section class="content">
         <div class="container">
-            <div>
-                <h2>Sales<span class="yellow">.</span></h2>
-                <a class="nav-link" href="{{ route('sales.create') }}">{{ __('Registeer hier een klant.') }}</a>
-                <a class="nav-link" href="quotations/create">Offerte aanmaken</a>
-                <a class="nav-link" href="offer/create">Prijs opgave aanmaken</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="content">
-        <div class="container">
+            <h2>Klant<span class="yellow">.</span></h2>
             @foreach($customers as $customer)
                 @if($customer->role_id == 7)
                 <ul class="lists">
@@ -23,6 +13,12 @@
                 </ul>
                 @endif
             @endforeach
+        </div>
+    </section>
+    <section class="content">
+        <div class="container">
+            <h2>Commentaar<span class="yellow">.</span></h2>
+                <a class="submit-btn" href="{{asset('notes/create')}}">commentaar toevoegen<span class="yellow">.</span></a>
         </div>
     </section>
 @endsection

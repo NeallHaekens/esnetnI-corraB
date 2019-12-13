@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use \App\Malfunction;
+use \App\lease;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 
@@ -16,10 +18,7 @@ class maintenanceController extends Controller
     public function index()
     {
 
-        $malfunctions = \App\Malfunction::all();
-
-
-
+        $malfunctions = Malfunction::all();
         return view('maintenance.index', ['malfunctions' => $malfunctions]);
     }
 
@@ -30,7 +29,9 @@ class maintenanceController extends Controller
      */
     public function create()
     {
-        //
+        $malfunctions = Malfunction::all();
+        $leases = lease::all();
+        return view('maintenance.create', ['malfunctions' => $malfunctions, 'leases' => $leases]);
     }
 
     /**
