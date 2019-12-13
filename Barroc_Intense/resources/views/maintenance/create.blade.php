@@ -13,7 +13,7 @@
                         <label for="note" class="col-md-4 col-form-label text-md-right">Selecteer een Klant</label>
                         <select name="malfunction_id" id="malfunction_id">
                             @foreach($leases as $lease)
-                                <option id="malfunction_id" value="{{$lease->id}}">{{$lease->id}}, {{$lease->customer->name}}</option>
+                                <option id="malfunction_id" value="{{$lease->id}}">{{$lease->id}}</option>
                             @endforeach
                         </select>
                     </div>
