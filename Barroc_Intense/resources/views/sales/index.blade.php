@@ -5,7 +5,7 @@
         <div class="container">
             <h2>Klant<span class="yellow">.</span></h2>
             @foreach($customers as $customer)
-                @if($customer->role_id == 7)
+                @if($customer->role_id == 9)
                     <ul class="lists">
                         <li>
                             <a  href="{{route('sales.show', $customer->role_id)}}"><img class="icons" src="{{asset('icons/account_yellow.png')}}" alt="">{{$customer->name}}</a>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use \App\Malfunction_type;
 
 class Malfunction_typesTableSeeder extends Seeder
 {
@@ -11,6 +12,20 @@ class Malfunction_typesTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Malfunction_type::insert([
+            'title' => 'Lekkage'
+        ]);
+
+        Malfunction_type::insert([
+            'title' => 'Foutmelding'
+        ]);
+
+        Malfunction_type::insert([
+            'title' => 'Storing'
+        ]);
+
+        Malfunction_type::insert([
+            'title' => 'Schade'
+        ]);
     }
 }

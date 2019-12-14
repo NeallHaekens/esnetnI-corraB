@@ -21,6 +21,9 @@ class RoleTableSeeder extends Seeder
             'title'=> 'CEO'
         ]);
         Role::insert([
+            'title'=> 'Head-Finance'
+        ]);
+        Role::insert([
             'title'=> 'Finance'
         ]);
         Role::insert([
@@ -30,10 +33,10 @@ class RoleTableSeeder extends Seeder
             'title'=> 'Sales'
         ]);
         Role::insert([
-        'title'=> 'Maintenance'
+            'title'=> 'Head-Maintenance'
         ]);
         Role::insert([
-            'title'=> 'Head-off Maintenance'
+        'title'=> 'Maintenance'
         ]);
         Role::insert([
             'title'=> 'Customer'
