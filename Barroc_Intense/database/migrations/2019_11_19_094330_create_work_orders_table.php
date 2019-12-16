@@ -15,12 +15,21 @@ class CreateWorkOrdersTable extends Migration
     {
         Schema::create('work_orders', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('maintenance_id');
             $table->unsignedBigInteger('lease_id');
             $table->unsignedBigInteger('malfunction_id');
+            $table->string('customer');
+            $table->string('email');
+            $table->string('company');
+            $table->string('question');
+            $table->string('product');
+            $table->decimal('amount');
+            $table->string('type');
+            $table->decimal('price');
+
             $table->timestamps();
 
-            $table->foreign('user_id')
+            $table->foreign('maintenance_id')
                 ->references('id')
                 ->on('users');
 

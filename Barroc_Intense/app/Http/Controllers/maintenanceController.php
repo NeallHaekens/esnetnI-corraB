@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
+use \App\work_orders;
 use App\User;
 use \App\Malfunction;
 use \App\lease;
@@ -30,8 +32,7 @@ class maintenanceController extends Controller
     public function create()
     {
         $malfunctions = Malfunction::all();
-        $leases = lease::all();
-        return view('maintenance.create', ['malfunctions' => $malfunctions, 'leases' => $leases]);
+        return view('maintenance.create', ['malfunctions' => $malfunctions]);
     }
 
     /**
@@ -42,7 +43,20 @@ class maintenanceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = Auth::user();
+
+        $lease_id = \DB::table('leases')
+            ->select('id')
+            ->join('work_orders', 'work_orders.lease_id', '=', 'leases.id')
+            ->get();
+
+        Work_orders::insert([
+            'maintenance_id'        => $user->id,
+            'lease_id'              => $lease_id->customer_id,
+            'malfunction_id'        => $request->malfunction_id
+        ]);
+
+        return redirect()->route('malfucntion.index');
     }
 
     /**

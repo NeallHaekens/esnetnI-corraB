@@ -18,13 +18,8 @@
     </form>
 
     <div class="form-group">
-        <label for="full-name">Full Name</label>
-        <input type="text" name="full-name">
-    </div>
-
-    <div class="form-group">
-        <label for="phone-number">Phone Number</label>
-        <input type="number" name="phone-number">
+        <label for="customer">Klant</label>
+        <input type="text" name="customer">
     </div>
 
     <div class="form-group">
@@ -33,13 +28,33 @@
     </div>
 
     <div class="form-group">
-        <label for="address">Address</label>
-        <input type="text" name="address">
+        <label for="company">Bedrijf</label>
+        <input type="text" name="company">
     </div>
 
     <div class="form-group">
-        <label for="date">Date</label>
-        <input type="date" name="date">
+        <label for="question">Vraag</label>
+        <input type="text" name="question">
+    </div>
+
+    <div class="form-group">
+        <label for="product">Product</label>
+        <input type="text" name="product">
+    </div>
+
+    <div class="form-group">
+        <label for="amount">Aantal</label>
+        <input type="number" name="amount">
+    </div>
+
+    <div class="form-group">
+        <label for="type">Type</label>
+        <input type="text" name="type">
+    </div>
+
+    <div class="form-group">
+        <label for="price">Prijs</label>
+        <input type="number" name="price">
     </div>
 
 @endsection

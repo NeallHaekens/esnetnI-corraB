@@ -40,23 +40,24 @@ class LoginController extends Controller
                 return 'ceo';
                     break;
             case 3:
-                return 'finance';
+                return 'head-finance';
                     break;
             case 4:
+                return 'finance';
+                break;
+            case 5:
                 return 'supplies';
                     break;
-            case 5:
-                // Head maintenance
-                return 'sales';
-                break;
             case 6:
-                return 'maintenance';
+                return 'sales';
                     break;
             case 7:
                 return 'head-maintenance';
                     break;
             case 8:
-                // Customer
+                return 'maintenance';
+                    break;
+            case 9:
                 return 'customer';
                     break;
         }
