@@ -28,6 +28,25 @@ class customerController extends Controller
         return view('customer/index');
     }
 
+    public function api()//api voor c# app
+    {
+        $customers = \App\User::with('company')->where('role_id', 7)->get();
+        return $customers;
+    }
+
+    public function api_show(\App\User $customer) //show json
+    {
+        if ($customer->role_id != 7)
+        {
+            return 'Error';
+        }
+        else
+        {
+            return $customer->load('Company','Leases');
+
+        }
+    }
+
     /**
      * Show the form for creating a new resource.
      *

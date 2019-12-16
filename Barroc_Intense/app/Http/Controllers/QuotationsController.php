@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\lease;
+use App\supply;
+use App\User;
 use Illuminate\Http\Request;
 
 class QuotationsController extends Controller
@@ -13,7 +16,10 @@ class QuotationsController extends Controller
      */
     public function index()
     {
-        return view('quotations.index');
+        $users = User::all();
+        $leases = lease::all();
+        $supplys = supply::all();
+        return view('quotations/create',['users'=>$users, 'leases'=>$leases,'supplys'=>$supplys]);
     }
 
     /**
@@ -23,7 +29,7 @@ class QuotationsController extends Controller
      */
     public function create()
     {
-        return view('quotations/create');
+        return view('sales/create');
     }
 
     /**

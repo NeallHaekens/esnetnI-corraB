@@ -32,7 +32,7 @@
                 </select>
             </div>
 
-            <input type="submit" value="Edit Product">
+            <input type="submit" value="Edit company">
         </form>
     </div>
 @endsection

@@ -65,9 +65,8 @@
 
                             @elseif(Auth::user()->role_id == 5)
                                 <li><a class="header-link" href="{{asset('sales')}}">Klanten</a></li>
-                                <li><a class="header-link" href="{{asset('quotations/create')}}">Offerte aanmaken</a></li>
                                 <li><a class="header-link" href="{{ asset('sales/create') }}">{{ __('Registeer hier een klant.') }}</a></li>
-                                <li><a class="header-link" href="{{asset('offer/create')}}">Prijsopgave aanmaken</a></li>
+                                <li><a class="header-link" href="{{route('quotations.index')}}">Prijsopgave aanmaken</a></li>
 
                             @elseif(Auth::user()->role_id == 6)
                                <a class="header-link"href="{{ route('maintenance.index') }}">Maintenance</a>
@@ -75,7 +74,7 @@
                             @elseif(Auth::user()->role_id == 3)
                                 <a class="nav-link"href="{{asset('')}}">Financien</a>
                                 <a class="nav-link"href="{{asset('')}}">Contract Overzicht</a>
-                                <a class="nav-link"href="{{asset('Company.index')}}">BKR Overzicht</a>
+                                <a class="nav-link"href="{{route('Company.index')}}">BKR Overzicht</a>
 
                             @elseif(Auth::user()->role_id == 7)
                                 <a class="header-link"href="{{asset('customer.create')}}">Storing melden?</a>
