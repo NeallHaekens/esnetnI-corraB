@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Contract;
 use Illuminate\Http\Request;
 
 class ContractController extends Controller
@@ -34,7 +35,17 @@ class ContractController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Contract::insert([
+            'customer'      =>      $request->customer,
+            'email'         =>      $request->email,
+            'question'      =>      $request->question,
+            'product'       =>      $request->product,
+            'amount'        =>      $request->amount,
+            'type'          =>      $request->type,
+            'price'         =>      $request->price
+        ]);
+
+        return redirect()->route('contract.index');
     }
 
     /**
