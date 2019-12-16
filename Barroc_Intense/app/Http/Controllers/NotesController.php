@@ -51,8 +51,6 @@ class NotesController extends Controller
         ]);
 
         return redirect()->route('sales.index');
-
-
     }
 
     /**

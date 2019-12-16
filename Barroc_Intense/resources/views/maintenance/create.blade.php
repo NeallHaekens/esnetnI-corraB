@@ -13,7 +13,7 @@
                         <label for="note" class="col-md-4 col-form-label">Selecteer het probleem</label>
                         <select name="malfunction_id" id="malfunction_id">
                             @foreach($malfunctions as $malfunction)
-                                <option value="{{$malfunction->id}}">{{$malfunction->description}}</option>
+                                <option name="malfunction_id" id="malfunction_id" value="{{$malfunction->id}}">{{$malfunction->description}}</option>
                             @endforeach
                         </select>
                     </div>
