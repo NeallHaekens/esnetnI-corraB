@@ -7,29 +7,20 @@
     <section class="content">
         <div class="container">
             <div>
-                <form method="POST" action="{{ route('maintenance.store') }}">
+                <form class="form" method="POST" action="{{ route('maintenance.store') }}">
                     @csrf
-                    <div class="form-group row">
-                        <label for="note" class="col-md-4 col-form-label text-md-right">Selecteer een Klant</label>
-                        <select name="malfunction_id" id="malfunction_id">
-                            @foreach($leases as $lease)
-                                <option id="malfunction_id" value="{{$lease->id}}">{{$lease->id}}</option>
-                            @endforeach
-                        </select>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="note" class="col-md-4 col-form-label text-md-right">Selecteer een Klant</label>
+                    <div class="form-group row mb-0">
+                        <label for="note" class="col-md-4 col-form-label">Selecteer het probleem</label>
                         <select name="malfunction_id" id="malfunction_id">
                             @foreach($malfunctions as $malfunction)
-                                <option id="malfunction_id" value="{{$malfunction->id}}">{{$malfunction->title}}</option>
+                                <option value="{{$malfunction->id}}">{{$malfunction->description}}</option>
                             @endforeach
                         </select>
                     </div>
 
-                    <div class="form-group row">
-                        <label for="note" class="col-md-4 col-form-label text-md-right">Notitie</label>
-                        <textarea  class="col-md-4 col-form-label text-md-right" name="note" id="note" cols="30" rows=""></textarea>
+                    <div class="form-group row mb-0">
+                        <input class="form-check-input" type="checkbox" name="work_order_finisched" value="work_order_finisched" checked="checked">
+                        <label class="col-md-4  form-check-label" for="exampleCheck1">Reperatie gedaan<span class="yellow">.</span></label>
                     </div>
 
                     <div class="form-group row mb-0">

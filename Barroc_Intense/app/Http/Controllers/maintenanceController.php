@@ -30,8 +30,8 @@ class maintenanceController extends Controller
     public function create()
     {
         $malfunctions = Malfunction::all();
-        $leases = lease::all();
-        return view('maintenance.create', ['malfunctions' => $malfunctions, 'leases' => $leases]);
+//        $leases = lease::all();
+        return view('maintenance.create', ['malfunctions' => $malfunctions]);
     }
 
     /**
@@ -42,7 +42,7 @@ class maintenanceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**
