@@ -25,7 +25,9 @@ class customerController extends Controller
 
     public function index()
     {
-        return view('customer/index');
+        $customer = Auth::user();
+
+        return view('customer/index', ['customer' => $customer]);
     }
 
     public function api()//api voor c# app

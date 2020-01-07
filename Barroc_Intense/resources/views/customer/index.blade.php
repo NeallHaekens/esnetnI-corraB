@@ -4,24 +4,18 @@
     <section class="content">
         <div class="container">
             <div>
-                <h2>Customer<span class="yellow">.</span></h2>
+                <h2>{{ $customer->name }}<span class="yellow">.</span></h2>
+
             </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="content">
-            <div class="container">
-
+            <div>
                 <h3>Persoons gegevens<span class="yellow">.</span></h3>
 
-                <p>{{ $user->name }}</p>
-
-
-
-                {{--<a class="list" href="{{route('customer.show', $customer->id)}}">{{$customer->productName}} Gegevens.</a>--}}
+                <p>{{ $customer->name }}</p>
+                <p>{{ $customer->email }}</p>
+                <a href="{{route('customer.edit', $customer->id)}}">Bewerken</a>
             </div>
         </div>
     </section>
+
 @endsection
 
