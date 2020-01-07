@@ -40,7 +40,7 @@ Route::resource('product', 'ProductController');
 Route::resource('customer', 'customerController');
 
 Route::resource('notes', 'NotesController');
-Route::get('/', 'SearchController@search');
+//Route::get('/', 'SearchController@search');
 
 Route::resource('head-maintenance', 'headmaintenanceController');
 

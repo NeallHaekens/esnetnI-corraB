@@ -60,23 +60,23 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         @auth()
-                            @if(Auth::user()->role_id == 4)
+                            @if(Auth::user()->role_id == 5)
                                 <li><a class="header-link" href="{{asset('supplier')}}">Onderdelen</a></li>
 
-                            @elseif(Auth::user()->role_id == 5)
+                            @elseif(Auth::user()->role_id == 6)
                                 <li><a class="header-link" href="{{asset('sales')}}">Klanten</a></li>
                                 <li><a class="header-link" href="{{ asset('sales/create') }}">{{ __('Registeer hier een klant.') }}</a></li>
                                 <li><a class="header-link" href="{{route('quotations.index')}}">Prijsopgave aanmaken</a></li>
 
-                            @elseif(Auth::user()->role_id == 6)
+                            @elseif(Auth::user()->role_id == 8 && Auth::user()->role_id == 7)
                                <a class="header-link"href="{{ route('maintenance.index') }}">Maintenance</a>
 
-                            @elseif(Auth::user()->role_id == 3)
+                            @elseif(Auth::user()->role_id == 3 && Auth::user()->role_id == 4)
                                 <a class="nav-link"href="{{asset('')}}">Financien</a>
                                 <a class="nav-link"href="{{asset('')}}">Contract Overzicht</a>
                                 <a class="nav-link"href="{{route('Company.index')}}">BKR Overzicht</a>
 
-                            @elseif(Auth::user()->role_id == 7)
+                            @elseif(Auth::user()->role_id == 9)
                                 <a class="header-link"href="{{asset('customer.create')}}">Storing melden?</a>
 
                             @elseif(Auth::user()->role_id == 1)

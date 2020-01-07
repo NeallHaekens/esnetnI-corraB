@@ -12,8 +12,6 @@
             <div>
                 <h3>{{$customer->name}}</h3>
                 <p>Email: {{$customer->email}} </p>
-                <label for="">Commentaar</label>
-                {{--<p>{{$note->note}}</p>--}}
             </div>
         </div>
     </section>

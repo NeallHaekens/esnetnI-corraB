@@ -15,7 +15,9 @@
                     <label for="note" class="col-md-4 col-form-label text-md-right">Selecteer een Klant</label>
                     <select name="customer_id" id="customer_id">
                         @foreach($users as $user)
+                            @if($user->role_id == 9)
                             <option id="customer_id" value="{{$user->id}}">{{$user->name}}</option>
+                            @endif
                         @endforeach
                     </select>
                 </div>
