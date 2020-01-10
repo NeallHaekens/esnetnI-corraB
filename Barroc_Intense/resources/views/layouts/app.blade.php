@@ -71,13 +71,13 @@
                             @elseif(Auth::user()->role_id == 8 && Auth::user()->role_id == 7)
                                <a class="header-link"href="{{ route('maintenance.index') }}">Maintenance</a>
 
-                            @elseif(Auth::user()->role_id == 3)
+                            @elseif(Auth::user()->role_id == 4)
                                 <a class="nav-link"href="{{asset('')}}">Financien</a>
                                 <a class="nav-link"href="{{asset('')}}">Contract Overzicht</a>
                                 <a class="nav-link"href="{{route('Company.index')}}">BKR Overzicht</a>
 
                             @elseif(Auth::user()->role_id == 9)
-                                <a class="header-link"href="{{asset('customer.create')}}">Storing melden?</a>
+                                <a class="header-link"href="{{route('customer.create')}}">Storing melden?</a>
 
                             @elseif(Auth::user()->role_id == 1)
                                 <li><a class="header-link"href="{{asset('products.index')}}">Onderdelen</a></li>
