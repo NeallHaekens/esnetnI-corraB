@@ -65,7 +65,7 @@ class SalesController extends Controller
     public function show($id)
     {
         $customer = User::find($id);
-//        $note = Note::all();
+//      $note = Note::all();
         return view('sales/show', ['customer' => $customer] );
     }
 
